@@ -1,0 +1,797 @@
+/*
+===============================================================================
+File Name      : style.css
+Topic          : CSS Margin and Padding
+Repository     : 06-CSS3
+Description    : Demonstrates CSS Margin and Padding properties including
+                 shorthand syntax, individual properties,
+                 comparison table, and CSS Box Model visualization.
+Author         : Shaik Mahaboob Basha
+===============================================================================
+*/
+
+
+/* ========================================================================== */
+/* Global Reset                                                               */
+/* ========================================================================== */
+
+/* Selects every HTML element */
+*{
+
+    /* Removes default outer spacing */
+    margin:0;
+
+    /* Removes default inner spacing */
+    padding:0;
+
+    /* Includes padding and border within total width and height */
+    box-sizing:border-box;
+
+}
+
+
+/* ========================================================================== */
+/* Body Styling                                                               */
+/* ========================================================================== */
+
+/* Styles the entire webpage */
+body{
+
+    /* Sets the default font family */
+    font-family:Arial, Helvetica, sans-serif;
+
+    /* Sets page background color */
+    background-color:#f4f6f9;
+
+    /* Sets default text color */
+    color:#333333;
+
+    /* Improves text readability */
+    line-height:1.8;
+
+    /* Adds spacing around the webpage */
+    padding:30px;
+
+}
+
+
+/* ========================================================================== */
+/* Main Container                                                             */
+/* ========================================================================== */
+
+/* Styles the main content container */
+.container{
+
+    /* Limits maximum content width */
+    max-width:1200px;
+
+    /* Centers the container horizontally */
+    margin:auto;
+
+    /* Sets background color */
+    background-color:#ffffff;
+
+    /* Adds spacing inside the container */
+    padding:40px;
+
+    /* Creates rounded corners */
+    border-radius:10px;
+
+    /* Adds subtle shadow */
+    box-shadow:0 0 15px rgba(0,0,0,0.10);
+
+}
+
+
+/* ========================================================================== */
+/* Main Heading                                                               */
+/* ========================================================================== */
+
+/* Styles the main page heading */
+h1{
+
+    /* Centers the heading */
+    text-align:center;
+
+    /* Sets heading color */
+    color:#0d6efd;
+
+    /* Increases heading size */
+    font-size:38px;
+
+    /* Adds spacing below heading */
+    margin-bottom:20px;
+
+}
+
+
+/* ========================================================================== */
+/* Introduction Paragraph                                                     */
+/* ========================================================================== */
+
+/* Styles the introduction paragraph */
+.introduction{
+
+    /* Makes text slightly larger */
+    font-size:18px;
+
+    /* Displays italic text */
+    font-style:italic;
+
+    /* Changes text color */
+    color:#555555;
+
+    /* Adds spacing below */
+    margin-bottom:20px;
+
+}
+
+
+/* ========================================================================== */
+/* Horizontal Rule                                                            */
+/* ========================================================================== */
+
+/* Styles horizontal separators */
+hr{
+
+    /* Adds vertical spacing */
+    margin:35px 0;
+
+    /* Removes default border */
+    border:none;
+
+    /* Creates custom separator */
+    border-top:2px solid #dddddd;
+
+}
+
+
+/* ========================================================================== */
+/* Section Headings                                                           */
+/* ========================================================================== */
+
+/* Styles all level-2 headings */
+h2{
+
+    /* Changes text color */
+    color:#198754;
+
+    /* Adds spacing above */
+    margin-top:25px;
+
+    /* Adds spacing below */
+    margin-bottom:15px;
+
+    /* Creates decorative left border */
+    border-left:6px solid #198754;
+
+    /* Creates spacing between border and text */
+    padding-left:12px;
+
+}
+
+
+/* ========================================================================== */
+/* Paragraph Styling                                                          */
+/* ========================================================================== */
+
+/* Styles every paragraph */
+p{
+
+    /* Adds spacing below paragraphs */
+    margin-bottom:15px;
+
+    /* Aligns text evenly */
+    text-align:justify;
+
+}
+
+
+/* ========================================================================== */
+/* List Styling                                                               */
+/* ========================================================================== */
+
+/* Styles unordered lists */
+ul{
+
+    /* Creates left indentation */
+    margin-left:30px;
+
+    /* Adds spacing below */
+    margin-bottom:20px;
+
+}
+
+/* Styles ordered lists */
+ol{
+
+    /* Creates left indentation */
+    margin-left:30px;
+
+    /* Adds spacing below */
+    margin-bottom:20px;
+
+}
+
+/* Styles list items */
+li{
+
+    /* Adds spacing between list items */
+    margin-bottom:10px;
+
+}
+
+
+/* ========================================================================== */
+/* Common Demonstration Box                                                   */
+/* ========================================================================== */
+
+/* Styles every demonstration box */
+.box{
+
+    /* Sets fixed width */
+    width:240px;
+
+    /* Sets fixed height */
+    height:170px;
+
+    /* Adds internal spacing */
+    padding:20px;
+
+    /* Centers text */
+    text-align:center;
+
+    /* Sets background color */
+    background-color:#fafafa;
+
+    /* Creates rounded corners */
+    border-radius:8px;
+
+    /* Adds default border */
+    border:2px solid #cccccc;
+
+    /* Smooth hover animation */
+    transition:0.3s;
+
+}
+
+
+/* ========================================================================== */
+/* Hover Effect                                                               */
+/* ========================================================================== */
+
+/* Applies when mouse hovers over demonstration boxes */
+.box:hover{
+
+    /* Moves element upward */
+    transform:translateY(-5px);
+
+    /* Creates shadow */
+    box-shadow:0 8px 18px rgba(0,0,0,0.20);
+
+}
+
+
+/* ========================================================================== */
+/* Margin Demonstration Container                                             */
+/* ========================================================================== */
+
+/* Styles the margin examples container */
+.margin-container{
+
+    /* Enables Flexbox */
+    display:flex;
+
+    /* Allows wrapping */
+    flex-wrap:wrap;
+
+    /* Creates spacing */
+    gap:20px;
+
+    /* Centers items */
+    justify-content:center;
+
+    /* Adds spacing above */
+    margin-top:20px;
+
+}
+
+
+/* ========================================================================== */
+/* Padding Demonstration Container                                            */
+/* ========================================================================== */
+
+/* Styles the padding examples container */
+.padding-container{
+
+    /* Enables Flexbox */
+    display:flex;
+
+    /* Allows wrapping */
+    flex-wrap:wrap;
+
+    /* Creates spacing */
+    gap:20px;
+
+    /* Centers examples */
+    justify-content:center;
+
+    /* Adds spacing above */
+    margin-top:20px;
+
+}
+
+
+/* ========================================================================== */
+/* Margin Examples                                                            */
+/* ========================================================================== */
+
+/* Demonstrates small margin */
+.margin-small{
+
+    /* Creates external spacing */
+    margin:10px;
+
+}
+
+/* Demonstrates medium margin */
+.margin-medium{
+
+    /* Creates external spacing */
+    margin:30px;
+
+}
+
+/* Demonstrates large margin */
+.margin-large{
+
+    /* Creates external spacing */
+    margin:60px;
+
+}
+
+
+/* ========================================================================== */
+/* Padding Examples                                                           */
+/* ========================================================================== */
+
+/* Demonstrates small padding */
+.padding-small{
+
+    /* Creates internal spacing */
+    padding:10px;
+
+}
+
+/* Demonstrates medium padding */
+.padding-medium{
+
+    /* Creates internal spacing */
+    padding:30px;
+
+}
+
+/* Demonstrates large padding */
+.padding-large{
+
+    /* Creates internal spacing */
+    padding:60px;
+
+}
+
+/* ========================================================================== */
+/* Individual Margin Properties Container                                     */
+/* ========================================================================== */
+
+/* Styles the individual margin examples container */
+.individual-margin-container{
+
+    /* Enables Flexbox layout */
+    display:flex;
+
+    /* Allows items to wrap */
+    flex-wrap:wrap;
+
+    /* Creates spacing between items */
+    gap:20px;
+
+    /* Centers the items */
+    justify-content:center;
+
+    /* Adds spacing above */
+    margin-top:20px;
+
+}
+
+
+/* ========================================================================== */
+/* Individual Margin Examples                                                 */
+/* ========================================================================== */
+
+/* Demonstrates margin-top */
+.margin-top-example{
+
+    /* Applies top margin */
+    margin-top:30px;
+
+}
+
+/* Demonstrates margin-right */
+.margin-right-example{
+
+    /* Applies right margin */
+    margin-right:30px;
+
+}
+
+/* Demonstrates margin-bottom */
+.margin-bottom-example{
+
+    /* Applies bottom margin */
+    margin-bottom:30px;
+
+}
+
+/* Demonstrates margin-left */
+.margin-left-example{
+
+    /* Applies left margin */
+    margin-left:30px;
+
+}
+
+
+/* ========================================================================== */
+/* Individual Padding Properties Container                                    */
+/* ========================================================================== */
+
+/* Styles the individual padding examples container */
+.individual-padding-container{
+
+    /* Enables Flexbox layout */
+    display:flex;
+
+    /* Allows wrapping */
+    flex-wrap:wrap;
+
+    /* Creates spacing */
+    gap:20px;
+
+    /* Centers child elements */
+    justify-content:center;
+
+    /* Adds spacing above */
+    margin-top:20px;
+
+}
+
+
+/* ========================================================================== */
+/* Individual Padding Examples                                                */
+/* ========================================================================== */
+
+/* Demonstrates padding-top */
+.padding-top-example{
+
+    /* Applies top padding */
+    padding-top:30px;
+
+}
+
+/* Demonstrates padding-right */
+.padding-right-example{
+
+    /* Applies right padding */
+    padding-right:30px;
+
+}
+
+/* Demonstrates padding-bottom */
+.padding-bottom-example{
+
+    /* Applies bottom padding */
+    padding-bottom:30px;
+
+}
+
+/* Demonstrates padding-left */
+.padding-left-example{
+
+    /* Applies left padding */
+    padding-left:30px;
+
+}
+
+
+/* ========================================================================== */
+/* Shorthand Examples Container                                               */
+/* ========================================================================== */
+
+/* Styles shorthand examples container */
+.shorthand-container{
+
+    /* Enables Flexbox */
+    display:flex;
+
+    /* Allows wrapping */
+    flex-wrap:wrap;
+
+    /* Creates spacing */
+    gap:20px;
+
+    /* Centers child elements */
+    justify-content:center;
+
+    /* Adds spacing above */
+    margin-top:20px;
+
+}
+
+
+/* ========================================================================== */
+/* Margin Shorthand Examples                                                  */
+/* ========================================================================== */
+
+/* Demonstrates one-value margin shorthand */
+.margin-all{
+
+    /* Applies margin to all sides */
+    margin:20px;
+
+}
+
+/* Demonstrates two-value margin shorthand */
+.margin-two{
+
+    /* Applies vertical and horizontal margins */
+    margin:20px 40px;
+
+}
+
+/* Demonstrates three-value margin shorthand */
+.margin-three{
+
+    /* Applies top, horizontal, and bottom margins */
+    margin:10px 20px 30px;
+
+}
+
+/* Demonstrates four-value margin shorthand */
+.margin-four{
+
+    /* Applies top, right, bottom, and left margins */
+    margin:10px 20px 30px 40px;
+
+}
+
+
+/* ========================================================================== */
+/* Padding Shorthand Examples                                                 */
+/* ========================================================================== */
+
+/* Demonstrates one-value padding shorthand */
+.padding-all{
+
+    /* Applies padding to all sides */
+    padding:20px;
+
+}
+
+/* Demonstrates two-value padding shorthand */
+.padding-two{
+
+    /* Applies vertical and horizontal padding */
+    padding:20px 40px;
+
+}
+
+/* Demonstrates three-value padding shorthand */
+.padding-three{
+
+    /* Applies top, horizontal, and bottom padding */
+    padding:10px 20px 30px;
+
+}
+
+/* Demonstrates four-value padding shorthand */
+.padding-four{
+
+    /* Applies top, right, bottom, and left padding */
+    padding:10px 20px 30px 40px;
+
+}
+
+
+/* ========================================================================== */
+/* CSS Box Model Visualization                                                */
+/* ========================================================================== */
+
+/* Styles the outer margin layer */
+.margin-layer{
+
+    /* Creates outer spacing */
+    padding:30px;
+
+    /* Sets background color */
+    background-color:#ffe0b2;
+
+    /* Centers text */
+    text-align:center;
+
+}
+
+/* Styles the border layer */
+.border-layer{
+
+    /* Creates border */
+    border:5px solid #e65100;
+
+    /* Adds spacing */
+    padding:25px;
+
+    /* Sets background */
+    background-color:#fff3e0;
+
+}
+
+/* Styles the padding layer */
+.padding-layer{
+
+    /* Creates internal spacing */
+    padding:25px;
+
+    /* Sets background color */
+    background-color:#bbdefb;
+
+}
+
+/* Styles the content layer */
+.content-layer{
+
+    /* Adds spacing */
+    padding:20px;
+
+    /* Creates border */
+    border:2px dashed #1565c0;
+
+    /* Sets background color */
+    background-color:#ffffff;
+
+}
+
+
+/* ========================================================================== */
+/* Table Styling                                                              */
+/* ========================================================================== */
+
+/* Styles all tables */
+table{
+
+    /* Uses full available width */
+    width:100%;
+
+    /* Removes space between borders */
+    border-collapse:collapse;
+
+    /* Adds spacing above */
+    margin-top:20px;
+
+}
+
+/* Styles table, headers, and cells */
+table,
+th,
+td{
+
+    /* Creates border */
+    border:1px solid #cccccc;
+
+}
+
+/* Styles header and data cells */
+th,
+td{
+
+    /* Adds internal spacing */
+    padding:12px;
+
+    /* Aligns text */
+    text-align:left;
+
+}
+
+/* Styles header cells */
+th{
+
+    /* Sets background color */
+    background-color:#0d6efd;
+
+    /* Sets text color */
+    color:#ffffff;
+
+}
+
+/* Styles alternate rows */
+tbody tr:nth-child(even){
+
+    /* Applies alternate row color */
+    background-color:#f8f9fa;
+
+}
+
+
+/* ========================================================================== */
+/* Footer Styling                                                             */
+/* ========================================================================== */
+
+/* Styles the footer */
+footer{
+
+    /* Centers text */
+    text-align:center;
+
+    /* Adds spacing above */
+    margin-top:40px;
+
+    /* Adds top padding */
+    padding-top:20px;
+
+    /* Creates top border */
+    border-top:2px solid #dddddd;
+
+    /* Changes text color */
+    color:#555555;
+
+}
+
+
+/* ========================================================================== */
+/* Responsive Design                                                          */
+/* ========================================================================== */
+
+/* Applies responsive layout for tablets and mobile devices */
+@media screen and (max-width:768px){
+
+    /* Stacks all demonstration containers vertically */
+    .margin-container,
+    .padding-container,
+    .individual-margin-container,
+    .individual-padding-container,
+    .shorthand-container{
+
+        /* Changes layout direction */
+        flex-direction:column;
+
+        /* Centers child elements */
+        align-items:center;
+
+    }
+
+    /* Makes demonstration boxes responsive */
+    .box{
+
+        /* Uses most of the available width */
+        width:90%;
+
+        /* Allows height to adjust automatically */
+        height:auto;
+
+    }
+
+    /* Reduces main heading size */
+    h1{
+
+        /* Sets responsive font size */
+        font-size:30px;
+
+    }
+
+    /* Reduces section heading size */
+    h2{
+
+        /* Sets responsive font size */
+        font-size:24px;
+
+    }
+
+}
