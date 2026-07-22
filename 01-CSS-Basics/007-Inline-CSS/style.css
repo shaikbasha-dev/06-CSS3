@@ -1,0 +1,324 @@
+/*
+===============================================================================
+File Name      : style.css
+Topic          : Inline CSS
+Repository     : 06-CSS3
+Description    : Provides layout styling for the Inline CSS demonstration page.
+                 The actual examples of Inline CSS are written directly inside
+                 the HTML elements using the style attribute.
+Author         : Shaik Mahaboob Basha
+===============================================================================
+*/
+
+/*==============================================================================
+    Global Styles
+==============================================================================*/
+
+/* Styles the entire webpage */
+body {
+
+    /* Sets the default font family */
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* Removes the browser's default margin */
+    margin: 0;
+
+    /* Removes the browser's default padding */
+    padding: 0;
+
+    /* Sets the page background color */
+    background-color: #f4f6f9;
+
+    /* Sets the default text color */
+    color: #333333;
+
+    /* Improves readability */
+    line-height: 1.7;
+
+}
+
+/*==============================================================================
+    Main Container
+==============================================================================*/
+
+/* Styles the main container */
+.container {
+
+    /* Sets the maximum width */
+    max-width: 1100px;
+
+    /* Centers the container */
+    margin: 40px auto;
+
+    /* Adds internal spacing */
+    padding: 30px;
+
+    /* Sets the background color */
+    background-color: #ffffff;
+
+    /* Rounds the corners */
+    border-radius: 10px;
+
+    /* Adds a subtle shadow */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.10);
+
+}
+
+/*==============================================================================
+    Main Heading
+==============================================================================*/
+
+/* Styles the main heading */
+h1 {
+
+    /* Centers the heading */
+    text-align: center;
+
+    /* Sets the text color */
+    color: #0d6efd;
+
+    /* Sets the font size */
+    font-size: 38px;
+
+    /* Adds spacing below the heading */
+    margin-bottom: 20px;
+
+}
+
+/*==============================================================================
+    Introduction
+==============================================================================*/
+
+/* Styles the introduction paragraph */
+.intro {
+
+    /* Centers the text */
+    text-align: center;
+
+    /* Increases the font size */
+    font-size: 18px;
+
+    /* Makes the text italic */
+    font-style: italic;
+
+    /* Adds spacing below */
+    margin-bottom: 25px;
+
+}
+
+/*==============================================================================
+    Section Headings
+==============================================================================*/
+
+/* Styles all section headings */
+h2 {
+
+    /* Sets the heading color */
+    color: #1f4e79;
+
+    /* Adds a left border */
+    border-left: 5px solid #0d6efd;
+
+    /* Adds spacing inside the border */
+    padding-left: 10px;
+
+    /* Adds spacing above */
+    margin-top: 35px;
+
+    /* Adds spacing below */
+    margin-bottom: 20px;
+
+}
+
+/*==============================================================================
+    Horizontal Rule
+==============================================================================*/
+
+/* Styles horizontal separators */
+hr {
+
+    /* Removes the default border */
+    border: none;
+
+    /* Creates a custom separator */
+    border-top: 2px solid #dddddd;
+
+    /* Adds vertical spacing */
+    margin: 30px 0;
+
+}
+
+/*==============================================================================
+    Paragraph Styles
+==============================================================================*/
+
+/* Styles all paragraphs */
+p {
+
+    /* Sets the font size */
+    font-size: 16px;
+
+}
+
+/*==============================================================================
+    Lists
+==============================================================================*/
+
+/* Styles unordered lists */
+ul {
+
+    /* Adds left indentation */
+    padding-left: 25px;
+
+}
+
+/* Styles list items */
+li {
+
+    /* Adds spacing between list items */
+    margin-bottom: 10px;
+
+}
+
+/*==============================================================================
+    Table Styles
+==============================================================================*/
+
+/* Styles tables */
+table {
+
+    /* Makes the table occupy full width */
+    width: 100%;
+
+    /* Removes spacing between borders */
+    border-collapse: collapse;
+
+    /* Adds spacing above */
+    margin-top: 20px;
+
+}
+
+/* Styles table cells */
+th,
+td {
+
+    /* Creates borders */
+    border: 1px solid #cccccc;
+
+    /* Adds internal spacing */
+    padding: 12px;
+
+}
+
+/* Styles table headers */
+th {
+
+    /* Centers the text */
+    text-align: center;
+
+}
+
+/* Styles table data */
+td {
+
+    /* Centers the text */
+    text-align: center;
+
+}
+
+/*==============================================================================
+    Images
+==============================================================================*/
+
+/* Styles all images */
+img {
+
+    /* Displays image as block */
+    display: block;
+
+    /* Centers the image */
+    margin: 20px auto;
+
+    /* Makes image responsive */
+    max-width: 100%;
+
+    /* Maintains aspect ratio */
+    height: auto;
+
+}
+
+/*==============================================================================
+    Footer
+==============================================================================*/
+
+/* Styles footer */
+footer {
+
+    /* Centers the text */
+    text-align: center;
+
+    /* Adds spacing above */
+    margin-top: 40px;
+
+    /* Creates a top border */
+    border-top: 2px solid #dddddd;
+
+    /* Adds spacing above the border */
+    padding-top: 20px;
+
+}
+
+/* Styles footer paragraph */
+footer p {
+
+    /* Makes text italic */
+    font-style: italic;
+
+    /* Changes text color */
+    color: #666666;
+
+}
+
+/*==============================================================================
+    Responsive Design
+==============================================================================*/
+
+/* Applies styles for tablets and mobile devices */
+@media (max-width: 768px) {
+
+    /* Styles the container */
+    .container {
+
+        /* Reduces the outer margin */
+        margin: 15px;
+
+        /* Reduces the inner padding */
+        padding: 20px;
+
+    }
+
+    /* Styles the main heading */
+    h1 {
+
+        /* Reduces font size */
+        font-size: 30px;
+
+    }
+
+    /* Styles section headings */
+    h2 {
+
+        /* Reduces font size */
+        font-size: 24px;
+
+    }
+
+    /* Styles tables */
+    table {
+
+        /* Reduces font size */
+        font-size: 14px;
+
+    }
+
+}
