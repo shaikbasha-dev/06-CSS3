@@ -1,0 +1,298 @@
+/*
+=========================================================
+File Name   : style.css
+Module      : CSS Transforms
+Repository  : 06-CSS3
+Description : Demonstrates commonly used CSS Transform
+              functions including Translate, Rotate,
+              Scale, Skew, and Combined Transforms.
+Author      : Shaik Mahaboob Basha
+=========================================================
+*/
+
+/* ===================================================== */
+/*                 Universal Selector                     */
+/* ===================================================== */
+
+/* Remove default margin and padding from all elements */
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+/* ===================================================== */
+/*                    Body Styling                        */
+/* ===================================================== */
+
+/* Style the entire webpage */
+body{
+
+    /* Set the default font family */
+    font-family:Arial, Helvetica, sans-serif;
+
+    /* Light gray background */
+    background-color:#f4f4f4;
+
+    /* Add spacing around the page */
+    padding:30px;
+
+}
+
+/* ===================================================== */
+/*                    Header Styling                      */
+/* ===================================================== */
+
+/* Style the page header */
+header{
+
+    /* Center all header content */
+    text-align:center;
+
+    /* Space below the header */
+    margin-bottom:40px;
+
+}
+
+/* Style the main heading */
+header h1{
+
+    /* Dark blue heading color */
+    color:#2c3e50;
+
+    /* Space below heading */
+    margin-bottom:10px;
+
+}
+
+/* Style the description */
+header p{
+
+    /* Medium gray text */
+    color:#555;
+
+    /* Comfortable line spacing */
+    line-height:1.6;
+
+}
+
+/* ===================================================== */
+/*                  Main Layout                           */
+/* ===================================================== */
+
+/* Arrange all sections using Flexbox */
+main{
+
+    /* Enable Flexbox */
+    display:flex;
+
+    /* Allow wrapping on smaller screens */
+    flex-wrap:wrap;
+
+    /* Space between sections */
+    gap:30px;
+
+    /* Center all sections */
+    justify-content:center;
+
+}
+
+/* ===================================================== */
+/*                  Section Styling                       */
+/* ===================================================== */
+
+/* Style every transform section */
+section{
+
+    /* Center contents */
+    text-align:center;
+
+}
+
+/* Style section headings */
+section h2{
+
+    /* Space below heading */
+    margin-bottom:20px;
+
+    /* Professional heading color */
+    color:#34495e;
+
+}
+
+/* ===================================================== */
+/*                Common Box Styling                      */
+/* ===================================================== */
+
+/* Shared styling for every demonstration box */
+.box{
+
+    /* Fixed width */
+    width:140px;
+
+    /* Fixed height */
+    height:140px;
+
+    /* Blue background */
+    background-color:#3498db;
+
+    /* White text */
+    color:white;
+
+    /* Enable Flexbox */
+    display:flex;
+
+    /* Center text horizontally */
+    justify-content:center;
+
+    /* Center text vertically */
+    align-items:center;
+
+    /* Bold text */
+    font-weight:bold;
+
+    /* Rounded corners */
+    border-radius:12px;
+
+    /* Soft shadow */
+    box-shadow:0px 5px 12px rgba(0,0,0,0.20);
+
+    /* Smooth hover animation */
+    transition:transform 0.6s ease;
+
+}
+
+/* ===================================================== */
+/*             Translate Transform Example               */
+/* ===================================================== */
+
+/* Move the element horizontally on hover */
+.translate-box:hover{
+
+    /* Translate along X-axis */
+    transform:translateX(80px);
+
+}
+
+/* ===================================================== */
+/*              Rotate Transform Example                 */
+/* ===================================================== */
+
+/* Rotate the element when hovered */
+.rotate-box:hover{
+
+    /* Rotate clockwise */
+    transform:rotate(45deg);
+
+}
+
+/* ===================================================== */
+/*               Scale Transform Example                 */
+/* ===================================================== */
+
+/* Enlarge the element on hover */
+.scale-box:hover{
+
+    /* Increase size */
+    transform:scale(1.3);
+
+}
+
+/* ===================================================== */
+/*                Skew Transform Example                 */
+/* ===================================================== */
+
+/* Skew the element when hovered */
+.skew-box:hover{
+
+    /* Skew along the X-axis */
+    transform:skewX(20deg);
+
+}
+
+/* ===================================================== */
+/*             Combined Transform Example               */
+/* ===================================================== */
+
+/* Apply multiple transforms simultaneously */
+.combined-box:hover{
+
+    /*
+       Apply multiple transformations:
+       1. Move upward
+       2. Rotate slightly
+       3. Enlarge the element
+    */
+    transform:
+        translateY(-15px)
+        rotate(8deg)
+        scale(1.15);
+
+}
+
+/* ===================================================== */
+/*                  Footer Styling                       */
+/* ===================================================== */
+
+/* Style the page footer */
+footer{
+
+    /* Space above the footer */
+    margin-top:50px;
+
+    /* Center-align footer content */
+    text-align:center;
+
+    /* Medium gray text */
+    color:#555;
+
+    /* Improve readability */
+    line-height:1.6;
+
+}
+
+/* ===================================================== */
+/*              Responsive Media Query                   */
+/* ===================================================== */
+
+/*
+   Apply responsive styles when
+   the screen width is 768px or smaller
+*/
+@media screen and (max-width:768px){
+
+    /* Stack all sections vertically */
+    main{
+
+        /* Arrange items in a column */
+        flex-direction:column;
+
+        /* Center the sections */
+        align-items:center;
+
+    }
+
+    /* Reduce box dimensions for smaller screens */
+    .box{
+
+        /* Smaller width */
+        width:120px;
+
+        /* Smaller height */
+        height:120px;
+
+    }
+
+    /* Reduce heading size */
+    header h1{
+
+        /* Responsive font size */
+        font-size:2rem;
+
+    }
+
+}
