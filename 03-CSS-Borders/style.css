@@ -1,0 +1,758 @@
+/*
+===============================================================================
+File Name      : style.css
+Topic          : CSS Borders
+Repository     : 06-CSS3
+Description    : Stylesheet demonstrating various CSS Border properties
+                 including border styles, border width, border color,
+                 border radius, and individual border properties.
+Author         : Shaik Mahaboob Basha
+===============================================================================
+*/
+
+
+/* ========================================================================== */
+/* Global Reset                                                               */
+/* ========================================================================== */
+
+/* Selects every HTML element */
+*{
+
+    /* Removes default outer spacing */
+    margin:0;
+
+    /* Removes default inner spacing */
+    padding:0;
+
+    /* Includes border and padding inside total width and height */
+    box-sizing:border-box;
+
+}
+
+
+/* ========================================================================== */
+/* Body Styling                                                               */
+/* ========================================================================== */
+
+/* Styles the entire webpage */
+body{
+
+    /* Sets the default font family */
+    font-family:Arial, Helvetica, sans-serif;
+
+    /* Sets the background color */
+    background-color:#f4f6f9;
+
+    /* Sets the default text color */
+    color:#333333;
+
+    /* Improves readability */
+    line-height:1.8;
+
+    /* Adds spacing around the webpage */
+    padding:30px;
+
+}
+
+
+/* ========================================================================== */
+/* Main Container                                                             */
+/* ========================================================================== */
+
+/* Styles the main content container */
+.container{
+
+    /* Limits the maximum width */
+    max-width:1200px;
+
+    /* Centers the container horizontally */
+    margin:auto;
+
+    /* Sets background color */
+    background-color:#ffffff;
+
+    /* Adds spacing inside the container */
+    padding:40px;
+
+    /* Rounds the container corners */
+    border-radius:10px;
+
+    /* Adds a soft shadow */
+    box-shadow:0px 0px 15px rgba(0,0,0,0.10);
+
+}
+
+
+/* ========================================================================== */
+/* Main Heading                                                               */
+/* ========================================================================== */
+
+/* Styles the main page heading */
+h1{
+
+    /* Centers the heading */
+    text-align:center;
+
+    /* Changes heading color */
+    color:#0d6efd;
+
+    /* Increases font size */
+    font-size:38px;
+
+    /* Adds spacing below */
+    margin-bottom:20px;
+
+}
+
+
+/* ========================================================================== */
+/* Introduction Paragraph                                                     */
+/* ========================================================================== */
+
+/* Styles the introduction paragraph */
+.introduction{
+
+    /* Makes text slightly larger */
+    font-size:18px;
+
+    /* Displays italic text */
+    font-style:italic;
+
+    /* Changes text color */
+    color:#555555;
+
+    /* Adds spacing below */
+    margin-bottom:20px;
+
+}
+
+
+/* ========================================================================== */
+/* Horizontal Rule                                                            */
+/* ========================================================================== */
+
+/* Styles every horizontal line */
+hr{
+
+    /* Adds spacing above and below */
+    margin:35px 0;
+
+    /* Removes default border */
+    border:none;
+
+    /* Creates custom separator */
+    border-top:2px solid #dddddd;
+
+}
+
+
+/* ========================================================================== */
+/* Section Heading                                                            */
+/* ========================================================================== */
+
+/* Styles every level-2 heading */
+h2{
+
+    /* Changes text color */
+    color:#198754;
+
+    /* Adds spacing above */
+    margin-top:25px;
+
+    /* Adds spacing below */
+    margin-bottom:15px;
+
+    /* Creates left border */
+    border-left:6px solid #198754;
+
+    /* Creates spacing from border */
+    padding-left:12px;
+
+}
+
+
+/* ========================================================================== */
+/* Paragraph Styling                                                          */
+/* ========================================================================== */
+
+/* Styles every paragraph */
+p{
+
+    /* Adds spacing below paragraphs */
+    margin-bottom:15px;
+
+    /* Aligns text evenly */
+    text-align:justify;
+
+}
+
+
+/* ========================================================================== */
+/* List Styling                                                               */
+/* ========================================================================== */
+
+/* Styles unordered lists */
+ul{
+
+    /* Creates left indentation */
+    margin-left:30px;
+
+    /* Adds spacing below */
+    margin-bottom:20px;
+
+}
+
+
+/* Styles ordered lists */
+ol{
+
+    /* Creates left indentation */
+    margin-left:30px;
+
+    /* Adds spacing below */
+    margin-bottom:20px;
+
+}
+
+
+/* Styles list items */
+li{
+
+    /* Adds spacing between items */
+    margin-bottom:10px;
+
+}
+
+
+/* ========================================================================== */
+/* Border Example Container                                                   */
+/* ========================================================================== */
+
+/* Styles the border examples container */
+.border-examples{
+
+    /* Uses flexible layout */
+    display:flex;
+
+    /* Allows wrapping */
+    flex-wrap:wrap;
+
+    /* Creates spacing between boxes */
+    gap:20px;
+
+    /* Centers the boxes */
+    justify-content:center;
+
+    /* Adds spacing above */
+    margin-top:20px;
+
+}
+
+
+/* ========================================================================== */
+/* Common Box Styling                                                         */
+/* ========================================================================== */
+
+/* Styles every demonstration box */
+.box{
+
+    /* Sets width */
+    width:240px;
+
+    /* Sets height */
+    height:150px;
+
+    /* Adds spacing inside */
+    padding:20px;
+
+    /* Centers text */
+    text-align:center;
+
+    /* Adds background color */
+    background-color:#fafafa;
+
+    /* Rounds corners */
+    border-radius:8px;
+
+    /* Creates smooth transition */
+    transition:0.3s;
+
+}
+
+
+/* ========================================================================== */
+/* Hover Effect                                                               */
+/* ========================================================================== */
+
+/* Applies when mouse hovers over a box */
+.box:hover{
+
+    /* Moves the box slightly upward */
+    transform:translateY(-5px);
+
+    /* Adds shadow */
+    box-shadow:0px 8px 18px rgba(0,0,0,0.20);
+
+}
+
+
+/* ========================================================================== */
+/* Border Style Examples                                                      */
+/* ========================================================================== */
+
+/* Solid Border */
+.solid{
+
+    /* Creates solid border */
+    border:4px solid #0d6efd;
+
+}
+
+
+/* Dotted Border */
+.dotted{
+
+    /* Creates dotted border */
+    border:4px dotted #dc3545;
+
+}
+
+
+/* Dashed Border */
+.dashed{
+
+    /* Creates dashed border */
+    border:4px dashed #198754;
+
+}
+
+
+/* Double Border */
+.double{
+
+    /* Creates double border */
+    border:6px double #6f42c1;
+
+}
+
+
+/* Groove Border */
+.groove{
+
+    /* Creates groove border */
+    border:8px groove #ff9800;
+
+}
+
+
+/* Ridge Border */
+.ridge{
+
+    /* Creates ridge border */
+    border:8px ridge #009688;
+
+}
+
+
+/* Inset Border */
+.inset{
+
+    /* Creates inset border */
+    border:8px inset #795548;
+
+}
+
+
+/* Outset Border */
+.outset{
+
+    /* Creates outset border */
+    border:8px outset #3f51b5;
+
+}
+
+
+/* ========================================================================== */
+/* Border Width Examples                                                      */
+/* ========================================================================== */
+
+/* Styles the border width examples container */
+.border-width-container{
+
+    /* Uses Flexbox layout */
+    display:flex;
+
+    /* Allows items to wrap onto multiple lines */
+    flex-wrap:wrap;
+
+    /* Creates space between items */
+    gap:20px;
+
+    /* Centers the items horizontally */
+    justify-content:center;
+
+    /* Adds top spacing */
+    margin-top:20px;
+
+}
+
+/* Thin Border Example */
+.thin-border{
+
+    /* Creates a thin solid border */
+    border:1px solid #0d6efd;
+
+}
+
+/* Medium Border Example */
+.medium-border{
+
+    /* Creates a medium solid border */
+    border:4px solid #198754;
+
+}
+
+/* Thick Border Example */
+.thick-border{
+
+    /* Creates a thick solid border */
+    border:8px solid #dc3545;
+
+}
+
+/* Custom Border Example */
+.custom-border{
+
+    /* Creates a custom-width dashed border */
+    border:5px dashed #6f42c1;
+
+}
+
+
+/* ========================================================================== */
+/* Border Color Examples                                                      */
+/* ========================================================================== */
+
+/* Styles the border color examples container */
+.border-color-container{
+
+    /* Uses Flexbox layout */
+    display:flex;
+
+    /* Allows wrapping */
+    flex-wrap:wrap;
+
+    /* Adds spacing between boxes */
+    gap:20px;
+
+    /* Centers the boxes */
+    justify-content:center;
+
+    /* Adds top spacing */
+    margin-top:20px;
+
+}
+
+/* Red Border Example */
+.red-border{
+
+    /* Creates border */
+    border:4px solid;
+
+    /* Sets border color */
+    border-color:red;
+
+}
+
+/* Green Border Example */
+.green-border{
+
+    /* Creates border */
+    border:4px solid;
+
+    /* Sets border color */
+    border-color:green;
+
+}
+
+/* Blue Border Example */
+.blue-border{
+
+    /* Creates border */
+    border:4px solid;
+
+    /* Sets border color */
+    border-color:blue;
+
+}
+
+/* Orange Border Example */
+.orange-border{
+
+    /* Creates border */
+    border:4px solid;
+
+    /* Sets border color */
+    border-color:orange;
+
+}
+
+
+/* ========================================================================== */
+/* Border Radius Examples                                                     */
+/* ========================================================================== */
+
+/* Styles the border radius examples container */
+.radius-container{
+
+    /* Uses Flexbox layout */
+    display:flex;
+
+    /* Allows wrapping */
+    flex-wrap:wrap;
+
+    /* Adds spacing */
+    gap:20px;
+
+    /* Centers the boxes */
+    justify-content:center;
+
+    /* Adds top spacing */
+    margin-top:20px;
+
+}
+
+/* Sharp Corners */
+.radius-0{
+
+    /* Creates border */
+    border:4px solid #0d6efd;
+
+    /* Removes rounded corners */
+    border-radius:0;
+
+}
+
+/* Rounded Corners */
+.radius-10{
+
+    /* Creates border */
+    border:4px solid #198754;
+
+    /* Rounds corners */
+    border-radius:10px;
+
+}
+
+/* More Rounded Corners */
+.radius-20{
+
+    /* Creates border */
+    border:4px solid #fd7e14;
+
+    /* Rounds corners */
+    border-radius:20px;
+
+}
+
+/* Circular Shape */
+.radius-50{
+
+    /* Creates border */
+    border:4px solid #6f42c1;
+
+    /* Makes the element circular */
+    border-radius:50%;
+
+}
+
+
+/* ========================================================================== */
+/* Individual Border Properties                                               */
+/* ========================================================================== */
+
+/* Styles the individual border examples container */
+.individual-border-container{
+
+    /* Uses Flexbox */
+    display:flex;
+
+    /* Allows wrapping */
+    flex-wrap:wrap;
+
+    /* Adds spacing */
+    gap:20px;
+
+    /* Centers items */
+    justify-content:center;
+
+    /* Adds top spacing */
+    margin-top:20px;
+
+}
+
+/* Top Border Example */
+.top-border{
+
+    /* Applies border only to the top */
+    border-top:6px solid #0d6efd;
+
+}
+
+/* Right Border Example */
+.right-border{
+
+    /* Applies border only to the right */
+    border-right:6px solid #198754;
+
+}
+
+/* Bottom Border Example */
+.bottom-border{
+
+    /* Applies border only to the bottom */
+    border-bottom:6px solid #dc3545;
+
+}
+
+/* Left Border Example */
+.left-border{
+
+    /* Applies border only to the left */
+    border-left:6px solid #6f42c1;
+
+}
+
+
+/* ========================================================================== */
+/* Table Styling                                                              */
+/* ========================================================================== */
+
+/* Styles all tables */
+table{
+
+    /* Makes the table occupy full width */
+    width:100%;
+
+    /* Removes spacing between borders */
+    border-collapse:collapse;
+
+    /* Adds spacing above */
+    margin-top:20px;
+
+}
+
+/* Styles table, header, and data cells */
+table,
+th,
+td{
+
+    /* Creates borders */
+    border:1px solid #cccccc;
+
+}
+
+/* Styles table header and data cells */
+th,
+td{
+
+    /* Adds internal spacing */
+    padding:12px;
+
+    /* Aligns text */
+    text-align:left;
+
+}
+
+/* Styles table headers */
+th{
+
+    /* Sets background color */
+    background-color:#0d6efd;
+
+    /* Sets text color */
+    color:white;
+
+}
+
+/* Styles alternate table rows */
+tbody tr:nth-child(even){
+
+    /* Sets alternate background */
+    background-color:#f8f9fa;
+
+}
+
+
+/* ========================================================================== */
+/* Footer Styling                                                             */
+/* ========================================================================== */
+
+/* Styles the footer */
+footer{
+
+    /* Centers text */
+    text-align:center;
+
+    /* Adds spacing above */
+    margin-top:40px;
+
+    /* Adds top padding */
+    padding-top:20px;
+
+    /* Creates top border */
+    border-top:2px solid #dddddd;
+
+    /* Changes text color */
+    color:#555555;
+
+}
+
+
+/* ========================================================================== */
+/* Responsive Design                                                          */
+/* ========================================================================== */
+
+/* Applies styles for tablets and mobile devices */
+@media screen and (max-width:768px){
+
+    /* Makes all example containers vertical */
+    .border-examples,
+    .border-width-container,
+    .border-color-container,
+    .radius-container,
+    .individual-border-container{
+
+        /* Changes layout direction */
+        flex-direction:column;
+
+        /* Centers child elements */
+        align-items:center;
+
+    }
+
+    /* Styles demonstration boxes */
+    .box{
+
+        /* Makes the boxes responsive */
+        width:90%;
+
+    }
+
+    /* Reduces main heading size */
+    h1{
+
+        /* Sets responsive font size */
+        font-size:30px;
+
+    }
+
+    /* Reduces section heading size */
+    h2{
+
+        /* Sets responsive font size */
+        font-size:24px;
+
+    }
+
+}
