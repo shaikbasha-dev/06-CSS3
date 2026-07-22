@@ -1,0 +1,64 @@
+# ==========================
+# Operating System Files
+# ==========================
+
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ==========================
+# IDE and Editor Settings
+# ==========================
+
+.vscode/
+.idea/
+*.iml
+
+# ==========================
+# Logs
+# ==========================
+
+*.log
+
+# ==========================
+# Temporary Files
+# ==========================
+
+*.tmp
+*.temp
+
+# ==========================
+# Build and Cache Directories
+# ==========================
+
+dist/
+build/
+.cache/
+
+# ==========================
+# Node.js (Optional Future Projects)
+# ==========================
+
+node_modules/
+
+# ==========================
+# Environment Files
+# ==========================
+
+.env
+.env.*
+
+# ==========================
+# Package Manager Logs
+# ==========================
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ==========================
+# Miscellaneous
+# ==========================
+
+*.swp
+*.swo
