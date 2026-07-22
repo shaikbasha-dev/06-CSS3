@@ -1,0 +1,328 @@
+/*
+===============================================================================
+File Name      : style.css
+Topic          : Advantages of CSS
+Repository     : 06-CSS3
+Description    : Styles the "Advantages of CSS" webpage using modern CSS
+                 techniques to demonstrate typography, layout, spacing,
+                 tables, lists, hover effects, and responsive design.
+Author         : Shaik Mahaboob Basha
+Prerequisite   : HTML Basics, CSS Introduction
+===============================================================================
+*/
+
+/*=============================================================================
+                        GLOBAL STYLES
+==============================================================================*/
+
+/* Applies styles to the entire webpage */
+body{
+
+    /* Sets the default font family */
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* Removes the browser's default margin */
+    margin: 0;
+
+    /* Removes the browser's default padding */
+    padding: 0;
+
+    /* Sets a light gray background color */
+    background-color: #f4f4f4;
+
+    /* Sets the default text color */
+    color: #333333;
+
+    /* Ensures the webpage occupies at least the full viewport height */
+    min-height: 100vh;
+
+}
+
+/*=============================================================================
+                        MAIN CONTAINER
+==============================================================================*/
+
+/* Styles the main content container */
+.container{
+
+    /* Limits the maximum width of the content */
+    max-width: 1000px;
+
+    /* Centers the container horizontally */
+    margin: 40px auto;
+
+    /* Adds internal spacing */
+    padding: 30px;
+
+    /* Sets the background color */
+    background-color: #ffffff;
+
+    /* Rounds the corners */
+    border-radius: 10px;
+
+    /* Adds a subtle shadow */
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
+
+}
+
+/*=============================================================================
+                        MAIN HEADING
+==============================================================================*/
+
+/* Styles the main heading */
+h1{
+
+    /* Centers the heading */
+    text-align: center;
+
+    /* Sets the heading color */
+    color: royalblue;
+
+    /* Sets the heading size */
+    font-size: 40px;
+
+    /* Adds spacing below the heading */
+    margin-bottom: 20px;
+
+}
+
+/*=============================================================================
+                        SUB HEADINGS
+==============================================================================*/
+
+/* Styles all h2 headings */
+h2{
+
+    /* Sets the heading color */
+    color: #0d6efd;
+
+    /* Adds spacing above the heading */
+    margin-top: 35px;
+
+    /* Adds spacing below the heading */
+    margin-bottom: 15px;
+
+}
+
+/*=============================================================================
+                        INTRODUCTION PARAGRAPH
+==============================================================================*/
+
+/* Styles the introductory paragraph */
+.intro{
+
+    /* Centers the text */
+    text-align: center;
+
+    /* Makes the text slightly larger */
+    font-size: 20px;
+
+    /* Makes the text italic */
+    font-style: italic;
+
+    /* Improves readability */
+    line-height: 1.8;
+
+}
+
+/*=============================================================================
+                        HORIZONTAL LINE
+==============================================================================*/
+
+/* Styles all horizontal rules */
+hr{
+
+    /* Removes the default border */
+    border: none;
+
+    /* Creates a custom horizontal line */
+    border-top: 2px solid #dddddd;
+
+    /* Adds spacing above and below */
+    margin: 35px 0;
+
+}
+
+/*=============================================================================
+                        UNORDERED LIST
+==============================================================================*/
+
+/* Styles unordered lists */
+ul{
+
+    /* Adds left spacing */
+    padding-left: 30px;
+
+}
+
+/*=============================================================================
+                        ORDERED LIST
+==============================================================================*/
+
+/* Styles ordered lists */
+ol{
+
+    /* Adds left spacing */
+    padding-left: 30px;
+
+}
+
+/*=============================================================================
+                        LIST ITEMS
+==============================================================================*/
+
+/* Styles every list item */
+li{
+
+    /* Adds spacing between list items */
+    margin-bottom: 12px;
+
+    /* Sets the font size */
+    font-size: 17px;
+
+    /* Improves readability */
+    line-height: 1.6;
+
+}
+
+/*=============================================================================
+                        TABLE
+==============================================================================*/
+
+/* Styles the comparison table */
+table{
+
+    /* Makes the table occupy full width */
+    width: 100%;
+
+    /* Removes gaps between borders */
+    border-collapse: collapse;
+
+    /* Adds spacing above the table */
+    margin-top: 20px;
+
+}
+
+/* Styles both table headings and table cells */
+th,
+td{
+
+    /* Creates borders */
+    border: 1px solid #cccccc;
+
+    /* Adds spacing inside cells */
+    padding: 15px;
+
+    /* Aligns text to the left */
+    text-align: left;
+
+}
+
+/* Styles table headings */
+th{
+
+    /* Sets the background color */
+    background-color: royalblue;
+
+    /* Sets the text color */
+    color: white;
+
+}
+
+/* Applies alternate colors to even rows */
+tbody tr:nth-child(even){
+
+    /* Light gray background */
+    background-color: #f8f9fa;
+
+}
+
+/* Styles rows during mouse hover */
+tbody tr:hover{
+
+    /* Changes background color */
+    background-color: #dbeafe;
+
+    /* Indicates the row is interactive */
+    cursor: pointer;
+
+}
+
+/*=============================================================================
+                        FOOTER
+==============================================================================*/
+
+/* Styles the footer */
+footer{
+
+    /* Centers the content */
+    text-align: center;
+
+    /* Adds space above */
+    margin-top: 40px;
+
+    /* Adds internal spacing */
+    padding-top: 20px;
+
+    /* Creates a top border */
+    border-top: 2px solid #dddddd;
+
+}
+
+/* Styles paragraphs inside the footer */
+footer p{
+
+    /* Makes the text italic */
+    font-style: italic;
+
+    /* Sets the text color */
+    color: #666666;
+
+}
+
+/*=============================================================================
+                        RESPONSIVE DESIGN
+==============================================================================*/
+
+/*
+    Applies the following styles when
+    the screen width is 768 pixels or less.
+*/
+@media (max-width:768px){
+
+    /* Styles the container */
+    .container{
+
+        /* Reduces outer spacing */
+        margin: 15px;
+
+        /* Reduces inner spacing */
+        padding: 20px;
+
+    }
+
+    /* Styles the main heading */
+    h1{
+
+        /* Reduces heading size */
+        font-size: 30px;
+
+    }
+
+    /* Styles the introduction paragraph */
+    .intro{
+
+        /* Reduces font size */
+        font-size: 18px;
+
+    }
+
+    /* Styles the table */
+    table{
+
+        /* Reduces table font size */
+        font-size: 14px;
+
+    }
+
+}
