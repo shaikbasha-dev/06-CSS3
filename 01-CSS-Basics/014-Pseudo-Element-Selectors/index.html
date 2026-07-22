@@ -1,0 +1,451 @@
+<!--
+===============================================================================
+File Name      : index.html
+Topic          : Pseudo-Element Selectors
+Repository     : 06-CSS3
+Description    : Demonstrates the four commonly used CSS Pseudo-Element
+                 Selectors (::first-line, ::first-letter, ::before and
+                 ::after) using practical examples.
+Author         : Shaik Mahaboob Basha
+===============================================================================
+-->
+
+<!-- Declares the document as an HTML5 document -->
+<!DOCTYPE html>
+
+<!-- Root element of the HTML document -->
+<html lang="en">
+
+<head>
+
+    <!-- Specifies the character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the webpage responsive on all devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Displays the title in the browser tab -->
+    <title>Pseudo-Element Selectors</title>
+
+    <!-- Links the external CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<!-- Beginning of the webpage body -->
+<body>
+
+    <!-- Main container that holds all webpage content -->
+    <div class="container">
+
+        <!-- Main heading of the webpage -->
+        <h1>CSS Pseudo-Element Selectors</h1>
+
+        <!-- Introduction paragraph -->
+        <p class="introduction">
+
+            This webpage demonstrates how CSS Pseudo-Element Selectors can
+            style specific portions of HTML elements and generate additional
+            decorative content without modifying the HTML structure.
+
+        </p>
+
+        <!-- Horizontal line separating sections -->
+        <hr>
+
+        <!-- ============================================================ -->
+        <!-- Section : What are Pseudo-Elements?                           -->
+        <!-- ============================================================ -->
+
+        <!-- Creates a logical content section -->
+        <section>
+
+            <!-- Section heading -->
+            <h2>What are Pseudo-Element Selectors?</h2>
+
+            <!-- Explanation paragraph -->
+            <p>
+
+                A Pseudo-Element Selector allows developers to style a
+                particular part of an HTML element instead of styling the
+                entire element.
+
+            </p>
+
+            <!-- Explanation paragraph -->
+            <p>
+
+                CSS can also generate virtual content before or after an
+                existing HTML element using pseudo-elements.
+
+            </p>
+
+        </section>
+
+        <!-- Horizontal separator -->
+        <hr>
+
+        <!-- ============================================================ -->
+        <!-- Section : Example 1                                          -->
+        <!-- ============================================================ -->
+
+        <!-- Begins Example 1 -->
+        <section>
+
+            <!-- Section heading -->
+            <h2>Example 1 : ::first-line</h2>
+
+            <!-- Description -->
+            <p>
+
+                The paragraph below demonstrates the
+                <strong>::first-line</strong> pseudo-element.
+
+                Only the first visible line will receive the special styling.
+
+            </p>
+
+            <!-- Demonstration paragraph -->
+            <p class="first-line-demo">
+
+                Cascading Style Sheets (CSS) allow developers to separate
+                content from presentation. The first visible line of this
+                paragraph will be styled differently from the remaining text.
+                Resize the browser window to observe how the first line changes
+                dynamically while the pseudo-element continues to style only
+                the first rendered line.
+
+            </p>
+
+        </section>
+
+        <!-- Horizontal separator -->
+        <hr>
+
+        <!-- ============================================================ -->
+        <!-- Section : Example 2                                          -->
+        <!-- ============================================================ -->
+
+        <!-- Begins Example 2 -->
+        <section>
+
+            <!-- Section heading -->
+            <h2>Example 2 : ::first-letter</h2>
+
+            <!-- Description -->
+            <p>
+
+                The following paragraph demonstrates the
+                <strong>::first-letter</strong> pseudo-element.
+
+            </p>
+
+            <!-- Demonstration paragraph -->
+            <p class="first-letter-demo">
+
+                Modern websites frequently enlarge the first letter of an
+                article to improve typography and capture the reader's
+                attention. This effect is commonly seen in newspapers,
+                magazines, blogs, and documentation websites.
+
+            </p>
+
+        </section>
+
+        <!-- Horizontal separator -->
+        <hr>
+
+        <!-- ============================================================ -->
+        <!-- Comparison Section                                           -->
+        <!-- ============================================================ -->
+
+        <!-- Creates another logical content section -->
+        <section>
+
+            <!-- Section heading -->
+            <h2>Comparison</h2>
+
+            <!-- Creates a table -->
+            <table>
+
+                <!-- Table header -->
+                <thead>
+
+                    <!-- Header row -->
+                    <tr>
+
+                        <!-- Header column -->
+                        <th>Pseudo-Element</th>
+
+                        <!-- Header column -->
+                        <th>Purpose</th>
+
+                    </tr>
+
+                </thead>
+
+                <!-- Table body -->
+                <tbody>
+
+                    <!-- First row -->
+                    <tr>
+
+                        <!-- Column -->
+                        <td>::first-line</td>
+
+                        <!-- Column -->
+                        <td>Styles only the first rendered line.</td>
+
+                    </tr>
+
+                    <!-- Second row -->
+                    <tr>
+
+                        <!-- Column -->
+                        <td>::first-letter</td>
+
+                        <!-- Column -->
+                        <td>Styles only the first letter.</td>
+
+                    </tr>
+
+                    <!-- Third row -->
+                    <tr>
+
+                        <!-- Column -->
+                        <td>::before</td>
+
+                        <!-- Column -->
+                        <td>Inserts generated content before an element.</td>
+
+                    </tr>
+
+                    <!-- Fourth row -->
+                    <tr>
+
+                        <!-- Column -->
+                        <td>::after</td>
+
+                        <!-- Column -->
+                        <td>Inserts generated content after an element.</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <!-- Horizontal separator -->
+        <hr>
+
+        <!-- Part 2 continues from here -->
+              <!-- ============================================================ -->
+        <!-- Section : Example 3                                          -->
+        <!-- ============================================================ -->
+
+        <!-- Creates a new section for the ::before pseudo-element -->
+        <section>
+
+            <!-- Displays the section heading -->
+            <h2>Example 3 : ::before</h2>
+
+            <!-- Explains the purpose of the example -->
+            <p>
+
+                The <strong>::before</strong> pseudo-element inserts
+                virtual content before an HTML element without modifying
+                the HTML document.
+
+            </p>
+
+            <!-- Creates a list that will receive icons using ::before -->
+            <ul class="before-demo">
+
+                <!-- List item -->
+                <li>HTML5</li>
+
+                <!-- List item -->
+                <li>CSS3</li>
+
+                <!-- List item -->
+                <li>JavaScript</li>
+
+                <!-- List item -->
+                <li>Java Full Stack</li>
+
+            </ul>
+
+        </section>
+
+        <!-- Horizontal separator -->
+        <hr>
+
+        <!-- ============================================================ -->
+        <!-- Section : Example 4                                          -->
+        <!-- ============================================================ -->
+
+        <!-- Creates a new section for the ::after pseudo-element -->
+        <section>
+
+            <!-- Section heading -->
+            <h2>Example 4 : ::after</h2>
+
+            <!-- Description paragraph -->
+            <p>
+
+                The <strong>::after</strong> pseudo-element inserts
+                virtual content after an existing HTML element.
+
+            </p>
+
+            <!-- Paragraph that will display generated text after it -->
+            <p class="after-demo">
+
+                CSS makes webpages attractive while keeping HTML clean.
+
+            </p>
+
+        </section>
+
+        <!-- Horizontal separator -->
+        <hr>
+
+        <!-- ============================================================ -->
+        <!-- Browser Working Process                                      -->
+        <!-- ============================================================ -->
+
+        <!-- Creates a browser workflow section -->
+        <section>
+
+            <!-- Section heading -->
+            <h2>Browser Working Process</h2>
+
+            <!-- Ordered list describing browser execution -->
+            <ol>
+
+                <!-- Step 1 -->
+                <li>Browser loads the HTML document.</li>
+
+                <!-- Step 2 -->
+                <li>Browser creates the Document Object Model (DOM).</li>
+
+                <!-- Step 3 -->
+                <li>Browser loads the external CSS file.</li>
+
+                <!-- Step 4 -->
+                <li>Browser matches selectors with HTML elements.</li>
+
+                <!-- Step 5 -->
+                <li>Browser creates virtual pseudo-elements.</li>
+
+                <!-- Step 6 -->
+                <li>CSS styles are applied.</li>
+
+                <!-- Step 7 -->
+                <li>The webpage is rendered on the screen.</li>
+
+            </ol>
+
+        </section>
+
+        <!-- Horizontal separator -->
+        <hr>
+
+        <!-- ============================================================ -->
+        <!-- Best Practices Section                                       -->
+        <!-- ============================================================ -->
+
+        <!-- Creates the best practices section -->
+        <section>
+
+            <!-- Section heading -->
+            <h2>Best Practices</h2>
+
+            <!-- Unordered list -->
+            <ul>
+
+                <!-- Best practice -->
+                <li>Use pseudo-elements only for presentation.</li>
+
+                <!-- Best practice -->
+                <li>Keep HTML clean and semantic.</li>
+
+                <!-- Best practice -->
+                <li>Avoid placing important information inside generated content.</li>
+
+                <!-- Best practice -->
+                <li>Always use the modern double-colon (::) syntax.</li>
+
+                <!-- Best practice -->
+                <li>Test rendering in different browsers.</li>
+
+            </ul>
+
+        </section>
+
+        <!-- Horizontal separator -->
+        <hr>
+
+        <!-- ============================================================ -->
+        <!-- Key Takeaways Section                                        -->
+        <!-- ============================================================ -->
+
+        <!-- Creates the key takeaway section -->
+        <section>
+
+            <!-- Section heading -->
+            <h2>Key Takeaways</h2>
+
+            <!-- Unordered list -->
+            <ul>
+
+                <!-- Point -->
+                <li>Pseudo-elements style specific parts of HTML elements.</li>
+
+                <!-- Point -->
+                <li>They use the double-colon (::) syntax.</li>
+
+                <!-- Point -->
+                <li>::before inserts content before an element.</li>
+
+                <!-- Point -->
+                <li>::after inserts content after an element.</li>
+
+                <!-- Point -->
+                <li>::first-line styles only the first rendered line.</li>
+
+                <!-- Point -->
+                <li>::first-letter styles only the first letter.</li>
+
+            </ul>
+
+        </section>
+
+        <!-- Horizontal separator -->
+        <hr>
+
+        <!-- ============================================================ -->
+        <!-- Footer                                                       -->
+        <!-- ============================================================ -->
+
+        <!-- Footer section -->
+        <footer>
+
+            <!-- Footer paragraph -->
+            <p>
+
+                This webpage demonstrates the four most commonly used
+                CSS Pseudo-Element Selectors using practical,
+                real-world examples.
+
+            </p>
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
