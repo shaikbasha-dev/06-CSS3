@@ -1,0 +1,260 @@
+/*==========================================================
+    Project      : CSS Vertical Navigation Bar
+    Repository   : 06-CSS3
+    Module       : 06-CSS-Navigation-Bar
+    Topic        : 01-Vertical-Navigation
+    File         : style.css
+    Description  : Styles a professional Vertical Navigation
+                   Bar using CSS.
+==========================================================*/
+
+
+/*==========================================================
+                    Reset Default Styles
+==========================================================*/
+
+/*
+    Removes the browser's default margin
+    from all elements.
+*/
+*{
+    margin:0;
+
+    /*
+        Removes the browser's default padding
+        from all elements.
+    */
+    padding:0;
+
+    /*
+        Includes padding and borders within
+        the total width and height.
+    */
+    box-sizing:border-box;
+}
+
+
+/*==========================================================
+                    Body Styling
+==========================================================*/
+
+/*
+    Styles the entire webpage.
+*/
+body{
+
+    /*
+        Specifies the font family used
+        throughout the webpage.
+    */
+    font-family:Arial, Helvetica, sans-serif;
+
+    /*
+        Applies a light gray background
+        to the webpage.
+    */
+    background-color:#f4f4f4;
+}
+
+
+/*==========================================================
+                Vertical Navigation Container
+==========================================================*/
+
+/*
+    Styles the navigation container.
+*/
+nav{
+
+    /*
+        Sets the width of the navigation bar.
+    */
+    width:250px;
+
+    /*
+        Makes the navigation occupy the
+        full height of the browser window.
+    */
+    height:100vh;
+
+    /*
+        Applies a dark background color.
+    */
+    background-color:#2c3e50;
+
+    /*
+        Fixes the navigation bar to the
+        left side of the webpage.
+    */
+    position:fixed;
+
+    /*
+        Positions the navigation at the
+        top edge of the browser window.
+    */
+    top:0;
+
+    /*
+        Positions the navigation at the
+        left edge of the browser window.
+    */
+    left:0;
+
+    /*
+        Adds a subtle shadow to separate
+        the navigation from page content.
+    */
+    box-shadow:2px 0px 8px rgba(0,0,0,0.2);
+}
+
+
+/*==========================================================
+                    Navigation List
+==========================================================*/
+
+/*
+    Styles the unordered list.
+*/
+nav ul{
+
+    /*
+        Removes default bullets.
+    */
+    list-style:none;
+}
+
+
+/*==========================================================
+                    Navigation Items
+==========================================================*/
+
+/*
+    Styles every list item.
+*/
+nav ul li{
+
+    /*
+        Adds a separator line below
+        every navigation item.
+    */
+    border-bottom:1px solid #34495e;
+}
+
+
+/*==========================================================
+                    Navigation Links
+==========================================================*/
+
+/*
+    Styles every hyperlink inside
+    the navigation menu.
+*/
+nav ul li a{
+
+    /*
+        Makes the hyperlink occupy
+        the complete width.
+    */
+    display:block;
+
+    /*
+        Changes hyperlink text color.
+    */
+    color:#ffffff;
+
+    /*
+        Removes the underline.
+    */
+    text-decoration:none;
+
+    /*
+        Adds spacing inside the links.
+    */
+    padding:16px 24px;
+
+    /*
+        Sets the font size.
+    */
+    font-size:17px;
+
+    /*
+        Makes text slightly bold.
+    */
+    font-weight:500;
+
+    /*
+        Creates a smooth animation
+        when properties change.
+    */
+    transition:0.3s;
+}
+
+
+/*==========================================================
+                    Hover Effect
+==========================================================*/
+
+/*
+    Applies styles when the user
+    moves the mouse pointer over
+    a navigation link.
+*/
+nav ul li a:hover{
+
+    /*
+        Changes background color.
+    */
+    background-color:#3498db;
+
+    /*
+        Adds left spacing to create
+        a sliding effect.
+    */
+    padding-left:32px;
+}
+
+
+/*==========================================================
+                    Active Navigation Link
+==========================================================*/
+
+/*
+    Highlights the current page.
+*/
+nav ul li a.active{
+
+    /*
+        Applies a different background
+        color for the active page.
+    */
+    background-color:#2980b9;
+
+    /*
+        Displays a colored border
+        on the left side.
+    */
+    border-left:5px solid #f1c40f;
+}
+
+
+/*==========================================================
+                Keyboard Accessibility
+==========================================================*/
+
+/*
+    Applies styles when a navigation
+    link receives keyboard focus.
+*/
+nav ul li a:focus{
+
+    /*
+        Displays a visible outline.
+    */
+    outline:2px solid #ffffff;
+
+    /*
+        Adds spacing between the
+        outline and the element.
+    */
+    outline-offset:-2px;
+}
