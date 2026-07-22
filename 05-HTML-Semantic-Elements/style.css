@@ -1,0 +1,603 @@
+/*
+===============================================================================
+File Name      : style.css
+Topic          : HTML Semantic Elements
+Repository     : 06-CSS3
+Description    : Stylesheet demonstrating HTML5 Semantic Elements using
+                 modern layout techniques and responsive design.
+Author         : Shaik Mahaboob Basha
+===============================================================================
+*/
+
+
+/* ========================================================================== */
+/* Global Reset                                                               */
+/* ========================================================================== */
+
+/* Selects every HTML element */
+*{
+
+    /* Removes default margin */
+    margin:0;
+
+    /* Removes default padding */
+    padding:0;
+
+    /* Includes padding and border inside total width and height */
+    box-sizing:border-box;
+
+}
+
+
+/* ========================================================================== */
+/* Body Styling                                                               */
+/* ========================================================================== */
+
+/* Styles the entire webpage */
+body{
+
+    /* Sets the default font family */
+    font-family:Arial, Helvetica, sans-serif;
+
+    /* Sets page background color */
+    background-color:#f4f6f9;
+
+    /* Sets default text color */
+    color:#333333;
+
+    /* Improves readability */
+    line-height:1.8;
+
+}
+
+
+/* ========================================================================== */
+/* Header Styling                                                             */
+/* ========================================================================== */
+
+/* Styles the website header */
+header{
+
+    /* Sets background color */
+    background-color:#0d6efd;
+
+    /* Changes text color */
+    color:#ffffff;
+
+    /* Centers header content */
+    text-align:center;
+
+    /* Adds internal spacing */
+    padding:40px 20px;
+
+}
+
+
+/* Styles the main heading */
+header h1{
+
+    /* Increases font size */
+    font-size:40px;
+
+    /* Adds spacing below heading */
+    margin-bottom:15px;
+
+}
+
+
+/* Styles the header description */
+header p{
+
+    /* Increases text size */
+    font-size:18px;
+
+    /* Limits maximum width */
+    max-width:900px;
+
+    /* Centers the paragraph */
+    margin:0 auto;
+
+}
+
+
+/* ========================================================================== */
+/* Navigation Styling                                                         */
+/* ========================================================================== */
+
+/* Styles the navigation bar */
+nav{
+
+    /* Sets navigation background */
+    background-color:#212529;
+
+}
+
+
+/* Styles navigation list */
+nav ul{
+
+    /* Removes bullet points */
+    list-style:none;
+
+    /* Enables Flexbox */
+    display:flex;
+
+    /* Centers navigation items */
+    justify-content:center;
+
+    /* Allows wrapping on smaller screens */
+    flex-wrap:wrap;
+
+}
+
+
+/* Styles navigation list items */
+nav ul li{
+
+    /* Adds spacing around each item */
+    margin:12px;
+
+}
+
+
+/* Styles navigation links */
+nav ul li a{
+
+    /* Removes underline */
+    text-decoration:none;
+
+    /* Sets text color */
+    color:#ffffff;
+
+    /* Makes text bold */
+    font-weight:bold;
+
+    /* Adds spacing inside links */
+    padding:10px 18px;
+
+    /* Creates smooth animation */
+    transition:0.3s;
+
+}
+
+
+/* Hover effect for navigation links */
+nav ul li a:hover{
+
+    /* Changes background color */
+    background-color:#0d6efd;
+
+    /* Creates rounded corners */
+    border-radius:5px;
+
+}
+
+
+/* ========================================================================== */
+/* Main Content Styling                                                       */
+/* ========================================================================== */
+
+/* Styles the main content area */
+main{
+
+    /* Limits maximum width */
+    max-width:1200px;
+
+    /* Centers the content */
+    margin:30px auto;
+
+    /* Sets background color */
+    background-color:#ffffff;
+
+    /* Adds internal spacing */
+    padding:40px;
+
+    /* Creates rounded corners */
+    border-radius:10px;
+
+    /* Adds subtle shadow */
+    box-shadow:0 0 15px rgba(0,0,0,0.10);
+
+}
+
+
+/* ========================================================================== */
+/* Section Styling                                                            */
+/* ========================================================================== */
+
+/* Styles all sections */
+section{
+
+    /* Adds spacing below each section */
+    margin-bottom:40px;
+
+}
+
+
+/* Styles section headings */
+section h2{
+
+    /* Changes heading color */
+    color:#198754;
+
+    /* Adds decorative left border */
+    border-left:6px solid #198754;
+
+    /* Creates spacing between border and text */
+    padding-left:12px;
+
+    /* Adds spacing below */
+    margin-bottom:20px;
+
+}
+
+
+/* ========================================================================== */
+/* Article Styling                                                            */
+/* ========================================================================== */
+
+/* Styles all article elements */
+article{
+
+    /* Sets light background color */
+    background-color:#f8f9fa;
+
+    /* Creates left border */
+    border-left:5px solid #0d6efd;
+
+    /* Adds spacing inside */
+    padding:20px;
+
+    /* Adds spacing below */
+    margin-bottom:20px;
+
+    /* Creates rounded corners */
+    border-radius:6px;
+
+}
+
+
+/* Styles article headings */
+article h3{
+
+    /* Changes heading color */
+    color:#0d6efd;
+
+    /* Adds spacing below */
+    margin-bottom:10px;
+
+}
+
+
+/* ========================================================================== */
+/* Horizontal Rule Styling                                                    */
+/* ========================================================================== */
+
+/* Styles horizontal separators */
+hr{
+
+    /* Removes default border */
+    border:none;
+
+    /* Creates custom separator */
+    border-top:2px solid #dddddd;
+
+    /* Adds vertical spacing */
+    margin:35px 0;
+
+}
+
+
+/* ========================================================================== */
+/* Paragraph Styling                                                          */
+/* ========================================================================== */
+
+/* Styles all paragraphs */
+p{
+
+    /* Adds spacing below */
+    margin-bottom:15px;
+
+    /* Justifies text */
+    text-align:justify;
+
+}
+
+
+/* ========================================================================== */
+/* List Styling                                                               */
+/* ========================================================================== */
+
+/* Styles unordered lists */
+ul{
+
+    /* Creates indentation */
+    margin-left:30px;
+
+    /* Adds spacing below */
+    margin-bottom:20px;
+
+}
+
+
+/* Styles ordered lists */
+ol{
+
+    /* Creates indentation */
+    margin-left:30px;
+
+    /* Adds spacing below */
+    margin-bottom:20px;
+
+}
+
+
+/* Styles list items */
+li{
+
+    /* Adds spacing between list items */
+    margin-bottom:10px;
+
+}
+
+
+/* ========================================================================== */
+/* Table Styling                                                              */
+/* ========================================================================== */
+
+/* Styles all tables */
+table{
+
+    /* Makes table occupy full width */
+    width:100%;
+
+    /* Merges adjacent borders */
+    border-collapse:collapse;
+
+    /* Adds spacing below table */
+    margin-bottom:30px;
+
+}
+
+/* Styles table header and data cells */
+table,
+th,
+td{
+
+    /* Adds border around cells */
+    border:1px solid #cccccc;
+
+}
+
+/* Styles table header cells */
+th{
+
+    /* Sets header background */
+    background-color:#0d6efd;
+
+    /* Changes text color */
+    color:#ffffff;
+
+    /* Adds internal spacing */
+    padding:12px;
+
+    /* Centers text */
+    text-align:center;
+
+}
+
+/* Styles table data cells */
+td{
+
+    /* Adds internal spacing */
+    padding:12px;
+
+    /* Centers content */
+    text-align:center;
+
+}
+
+/* Applies alternating row colors */
+tbody tr:nth-child(even){
+
+    /* Sets alternate background */
+    background-color:#f8f9fa;
+
+}
+
+/* Hover effect for table rows */
+tbody tr:hover{
+
+    /* Highlights hovered row */
+    background-color:#e9ecef;
+
+}
+
+
+/* ========================================================================== */
+/* Preformatted Text Styling                                                  */
+/* ========================================================================== */
+
+/* Styles preformatted code block */
+pre{
+
+    /* Sets dark background */
+    background-color:#212529;
+
+    /* Sets text color */
+    color:#ffffff;
+
+    /* Adds internal spacing */
+    padding:20px;
+
+    /* Creates rounded corners */
+    border-radius:6px;
+
+    /* Adds vertical spacing */
+    margin:20px 0;
+
+    /* Enables horizontal scrolling if needed */
+    overflow-x:auto;
+
+    /* Uses monospace font */
+    font-family:Consolas, "Courier New", monospace;
+
+}
+
+
+/* ========================================================================== */
+/* Footer Styling                                                             */
+/* ========================================================================== */
+
+/* Styles footer section */
+footer{
+
+    /* Sets dark background */
+    background-color:#212529;
+
+    /* Changes text color */
+    color:#ffffff;
+
+    /* Centers content */
+    text-align:center;
+
+    /* Adds internal spacing */
+    padding:30px;
+
+    /* Creates rounded corners */
+    border-radius:8px;
+
+}
+
+/* Styles footer heading */
+footer h2{
+
+    /* Adds spacing below heading */
+    margin-bottom:15px;
+
+}
+
+/* Styles footer paragraphs */
+footer p{
+
+    /* Centers paragraph text */
+    text-align:center;
+
+    /* Removes unnecessary bottom margin */
+    margin-bottom:10px;
+
+}
+
+
+/* ========================================================================== */
+/* Anchor Link Styling                                                        */
+/* ========================================================================== */
+
+/* Styles all hyperlinks */
+a{
+
+    /* Inherits parent text color */
+    color:inherit;
+
+}
+
+/* Hover effect for hyperlinks */
+a:hover{
+
+    /* Underlines link */
+    text-decoration:underline;
+
+}
+
+
+/* ========================================================================== */
+/* Utility Classes                                                            */
+/* ========================================================================== */
+
+/* Reusable text center class */
+.text-center{
+
+    /* Centers text */
+    text-align:center;
+
+}
+
+/* Reusable bold text class */
+.font-bold{
+
+    /* Makes text bold */
+    font-weight:bold;
+
+}
+
+/* Reusable spacing class */
+.mt-20{
+
+    /* Adds top margin */
+    margin-top:20px;
+
+}
+
+
+/* ========================================================================== */
+/* Responsive Design                                                          */
+/* ========================================================================== */
+
+/* Applies styles for tablets and mobile devices */
+@media screen and (max-width:768px){
+
+    /* Adjusts main heading size */
+    header h1{
+
+        /* Reduces font size */
+        font-size:30px;
+
+    }
+
+    /* Adjusts navigation layout */
+    nav ul{
+
+        /* Stacks items vertically */
+        flex-direction:column;
+
+        /* Centers items */
+        align-items:center;
+
+    }
+
+    /* Adjusts main content spacing */
+    main{
+
+        /* Reduces margin */
+        margin:15px;
+
+        /* Reduces padding */
+        padding:20px;
+
+    }
+
+    /* Makes tables horizontally scrollable */
+    table{
+
+        /* Displays as block */
+        display:block;
+
+        /* Enables horizontal scrolling */
+        overflow-x:auto;
+
+    }
+
+    /* Reduces preformatted text size */
+    pre{
+
+        /* Reduces font size */
+        font-size:14px;
+
+    }
+
+}
+
+
+/* ========================================================================== */
+/* End of Stylesheet                                                          */
+/* ========================================================================== */
