@@ -1,0 +1,237 @@
+<!--
+===============================================================================
+File Name      : index.html
+Topic          : Ways to Apply CSS
+Repository     : 06-CSS3
+Description    : Demonstrates the three different methods of applying CSS to an
+                 HTML document: Inline CSS, Internal CSS, and External CSS.
+Author         : Shaik Mahaboob Basha
+===============================================================================
+-->
+
+<!-- Declares the document as an HTML5 document -->
+<!DOCTYPE html>
+
+<!-- Root element of the HTML document -->
+<html lang="en">
+
+<!-- Head section begins -->
+<head>
+
+    <!-- Specifies the character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the webpage responsive on all devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Displays the page title in the browser tab -->
+    <title>Ways to Apply CSS</title>
+
+    <!-- Internal CSS Example -->
+    <style>
+
+        /* Demonstrates Internal CSS */
+        .internal-example {
+
+            color: green;
+
+            font-size: 24px;
+
+            font-weight: bold;
+
+            text-align: center;
+
+        }
+
+    </style>
+
+    <!-- Links the external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<!-- Head section ends -->
+
+<!-- Body section begins -->
+<body>
+
+    <!-- Main container -->
+    <div class="container">
+
+        <!-- Main heading -->
+        <h1>Ways to Apply CSS</h1>
+
+        <!-- Introduction -->
+        <p class="intro">
+            CSS can be applied to HTML using Inline CSS, Internal CSS, and External CSS.
+            Each method has its own purpose and use case.
+        </p>
+
+        <!-- Horizontal separator -->
+        <hr>
+
+        <!-- Inline CSS Section -->
+        <section>
+
+            <!-- Section heading -->
+            <h2>1. Inline CSS</h2>
+
+            <!-- Example using the style attribute -->
+            <p style="color: blue; font-weight: bold;">
+
+                This paragraph is styled using Inline CSS.
+
+            </p>
+
+            <!-- Description -->
+            <p>
+
+                Inline CSS applies styles directly to an HTML element using the
+                <strong>style</strong> attribute.
+
+            </p>
+
+        </section>
+
+        <!-- Horizontal separator -->
+        <hr>
+
+        <!-- Internal CSS Section -->
+        <section>
+
+            <!-- Section heading -->
+            <h2>2. Internal CSS</h2>
+
+            <!-- Demonstrates Internal CSS -->
+            <p class="internal-example">
+
+                This paragraph is styled using Internal CSS.
+
+            </p>
+
+            <!-- Description -->
+            <p>
+
+                Internal CSS is written inside the
+                <strong>&lt;style&gt;</strong> element within the
+                <strong>&lt;head&gt;</strong> section.
+
+            </p>
+
+        </section>
+
+        <!-- Horizontal separator -->
+        <hr>
+
+        <!-- External CSS Section -->
+        <section>
+
+            <!-- Section heading -->
+            <h2>3. External CSS</h2>
+
+            <!-- Demonstrates External CSS -->
+            <p class="external-example">
+
+                This paragraph is styled using the external stylesheet.
+
+            </p>
+
+            <!-- Description -->
+            <p>
+
+                External CSS stores all styles in a separate
+                <strong>.css</strong> file, making the code reusable and easy to
+                maintain.
+
+            </p>
+
+        </section>
+
+        <!-- Horizontal separator -->
+        <hr>
+
+        <!-- Comparison Table -->
+        <section>
+
+            <!-- Section heading -->
+            <h2>Comparison of CSS Methods</h2>
+
+            <!-- Comparison table -->
+            <table>
+
+                <!-- Table header -->
+                <thead>
+
+                    <tr>
+
+                        <th>Method</th>
+
+                        <th>Reusable</th>
+
+                        <th>Recommended for Large Projects</th>
+
+                    </tr>
+
+                </thead>
+
+                <!-- Table body -->
+                <tbody>
+
+                    <tr>
+
+                        <td>Inline CSS</td>
+
+                        <td>No</td>
+
+                        <td>No</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Internal CSS</td>
+
+                        <td>Limited</td>
+
+                        <td>No</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>External CSS</td>
+
+                        <td>Yes</td>
+
+                        <td>Yes</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <!-- Horizontal separator -->
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+
+            <p>
+
+                External CSS is the industry-standard approach because it promotes
+                maintainability, consistency, and code reusability.
+
+            </p>
+
+        </footer>
+
+    </div>
+    <!-- End of container -->
+
+</body>
+<!-- Body section ends -->
+
+<!-- End of HTML document -->
+</html>
