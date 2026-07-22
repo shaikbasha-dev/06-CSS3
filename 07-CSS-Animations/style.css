@@ -1,0 +1,407 @@
+/*==============================================================*/
+/*                                                              */
+/*              CSS Animations Demonstration Stylesheet          */
+/*                                                              */
+/*  File Name   : style.css                                     */
+/*  Description : Demonstrates commonly used CSS animations      */
+/*                using modern CSS techniques and @keyframes.   */
+/*                                                              */
+/*==============================================================*/
+
+
+/*==============================================================*/
+/*                    Universal Selector                        */
+/*==============================================================*/
+
+/*
+    Removes the browser's default margin and padding
+    from all HTML elements.
+
+    Applies the border-box sizing model for easier
+    layout calculations.
+*/
+*{
+
+    /* Removes default outer spacing */
+    margin: 0;
+
+    /* Removes default inner spacing */
+    padding: 0;
+
+    /* Uses border-box sizing */
+    box-sizing: border-box;
+
+}
+
+
+/*==============================================================*/
+/*                        Body Styling                          */
+/*==============================================================*/
+
+body{
+
+    /* Sets the default font */
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* Applies a light background color */
+    background-color: #f4f4f4;
+
+    /* Adds spacing around the page */
+    padding: 30px;
+
+}
+
+
+/*==============================================================*/
+/*                       Header Styling                         */
+/*==============================================================*/
+
+header{
+
+    /* Centers the text */
+    text-align: center;
+
+    /* Space below the header */
+    margin-bottom: 40px;
+
+}
+
+header h1{
+
+    /* Dark heading color */
+    color: #2c3e50;
+
+    /* Space below heading */
+    margin-bottom: 10px;
+
+}
+
+header p{
+
+    /* Paragraph text color */
+    color: #555;
+
+}
+
+
+/*==============================================================*/
+/*                    Main Layout Styling                       */
+/*==============================================================*/
+
+main{
+
+    /* Uses Flexbox layout */
+    display: flex;
+
+    /* Allows items to wrap */
+    flex-wrap: wrap;
+
+    /* Space between animation cards */
+    gap: 30px;
+
+    /* Centers all cards */
+    justify-content: center;
+
+}
+
+
+/*==============================================================*/
+/*                     Section Styling                          */
+/*==============================================================*/
+
+section{
+
+    /* Centers the section content */
+    text-align: center;
+
+}
+
+section h2{
+
+    /* Space below heading */
+    margin-bottom: 15px;
+
+    /* Heading color */
+    color: #34495e;
+
+}
+
+
+/*==============================================================*/
+/*                      Common Box Style                        */
+/*==============================================================*/
+
+.box{
+
+    /* Width of animation box */
+    width: 120px;
+
+    /* Height of animation box */
+    height: 120px;
+
+    /* Blue background */
+    background-color: #3498db;
+
+    /* White text */
+    color: white;
+
+    /* Centers text horizontally */
+    display: flex;
+
+    /* Centers text vertically */
+    justify-content: center;
+
+    /* Centers text vertically */
+    align-items: center;
+
+    /* Semi-bold text */
+    font-weight: bold;
+
+    /* Rounded corners */
+    border-radius: 10px;
+
+    /* Shadow effect */
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.20);
+
+}
+
+
+/*==============================================================*/
+/*                    Move Animation                            */
+/*==============================================================*/
+
+.move-box{
+
+    /* Applies the move animation */
+    animation: moveBox 3s linear infinite alternate;
+
+}
+
+
+/*==============================================================*/
+/*                   Rotate Animation                           */
+/*==============================================================*/
+
+.rotate-box{
+
+    /* Applies rotation animation */
+    animation: rotateBox 2s linear infinite;
+
+}
+
+
+/*==============================================================*/
+/*                    Scale Animation                           */
+/*==============================================================*/
+
+.scale-box{
+
+    /* Applies scaling animation */
+    animation: scaleBox 2s ease-in-out infinite;
+
+}
+
+
+/*==============================================================*/
+/*                     Fade Animation                           */
+/*==============================================================*/
+
+.fade-box{
+
+    /* Applies fade animation */
+    animation: fadeBox 2s ease-in-out infinite alternate;
+
+}
+
+
+/*==============================================================*/
+/*                  Color Change Animation                      */
+/*==============================================================*/
+
+.color-box{
+
+    /* Applies color changing animation */
+    animation: colorBox 4s linear infinite;
+
+}
+
+
+/*==============================================================*/
+/*                    Bounce Animation                          */
+/*==============================================================*/
+
+.bounce-box{
+
+    /* Applies bouncing animation */
+    animation: bounceBox 1s ease infinite alternate;
+
+}
+
+
+/*==============================================================*/
+/*                     Move Keyframes                           */
+/*==============================================================*/
+
+@keyframes moveBox{
+
+    from{
+
+        transform: translateX(0px);
+
+    }
+
+    to{
+
+        transform: translateX(120px);
+
+    }
+
+}
+
+
+/*==============================================================*/
+/*                    Rotate Keyframes                          */
+/*==============================================================*/
+
+@keyframes rotateBox{
+
+    from{
+
+        transform: rotate(0deg);
+
+    }
+
+    to{
+
+        transform: rotate(360deg);
+
+    }
+
+}
+
+
+/*==============================================================*/
+/*                     Scale Keyframes                          */
+/*==============================================================*/
+
+@keyframes scaleBox{
+
+    0%{
+
+        transform: scale(1);
+
+    }
+
+    50%{
+
+        transform: scale(1.3);
+
+    }
+
+    100%{
+
+        transform: scale(1);
+
+    }
+
+}
+
+
+/*==============================================================*/
+/*                     Fade Keyframes                           */
+/*==============================================================*/
+
+@keyframes fadeBox{
+
+    from{
+
+        opacity: 1;
+
+    }
+
+    to{
+
+        opacity: 0.2;
+
+    }
+
+}
+
+
+/*==============================================================*/
+/*                  Color Change Keyframes                      */
+/*==============================================================*/
+
+@keyframes colorBox{
+
+    0%{
+
+        background-color: #3498db;
+
+    }
+
+    25%{
+
+        background-color: #2ecc71;
+
+    }
+
+    50%{
+
+        background-color: #f39c12;
+
+    }
+
+    75%{
+
+        background-color: #9b59b6;
+
+    }
+
+    100%{
+
+        background-color: #e74c3c;
+
+    }
+
+}
+
+
+/*==============================================================*/
+/*                    Bounce Keyframes                          */
+/*==============================================================*/
+
+@keyframes bounceBox{
+
+    from{
+
+        transform: translateY(0px);
+
+    }
+
+    to{
+
+        transform: translateY(-40px);
+
+    }
+
+}
+
+
+/*==============================================================*/
+/*                  Responsive Design                           */
+/*==============================================================*/
+
+@media screen and (max-width:768px){
+
+    main{
+
+        /* Displays cards vertically */
+        flex-direction: column;
+
+        /* Centers cards */
+        align-items: center;
+
+    }
+
+}
