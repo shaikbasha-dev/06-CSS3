@@ -1,0 +1,497 @@
+/*
+===============================================================================
+File Name      : style.css
+Topic          : CSS Pseudo-Element Selectors
+Repository     : 06-CSS3
+Description    : Demonstrates the styling of CSS Pseudo-Element Selectors
+                 including ::first-line, ::first-letter, ::before and ::after.
+Author         : Shaik Mahaboob Basha
+===============================================================================
+*/
+
+
+/* ========================================================================== */
+/* Global Reset                                                               */
+/* ========================================================================== */
+
+/* Selects every HTML element */
+*{
+
+    /* Removes the default outer spacing */
+    margin:0;
+
+    /* Removes the default inner spacing */
+    padding:0;
+
+    /* Includes padding and border inside element width and height */
+    box-sizing:border-box;
+
+}
+
+
+/* ========================================================================== */
+/* Body Styling                                                               */
+/* ========================================================================== */
+
+/* Styles the entire webpage */
+body{
+
+    /* Specifies the default font family */
+    font-family:Arial, Helvetica, sans-serif;
+
+    /* Sets the background color */
+    background-color:#f4f6f9;
+
+    /* Sets the default text color */
+    color:#333333;
+
+    /* Adds spacing around the webpage */
+    padding:30px;
+
+    /* Increases line spacing for better readability */
+    line-height:1.8;
+
+}
+
+
+/* ========================================================================== */
+/* Main Container                                                             */
+/* ========================================================================== */
+
+/* Styles the main content container */
+.container{
+
+    /* Sets the maximum width */
+    max-width:1100px;
+
+    /* Centers the container horizontally */
+    margin:auto;
+
+    /* Sets the background color */
+    background-color:#ffffff;
+
+    /* Adds internal spacing */
+    padding:40px;
+
+    /* Rounds the container corners */
+    border-radius:10px;
+
+    /* Adds a subtle shadow */
+    box-shadow:0px 0px 15px rgba(0,0,0,0.10);
+
+}
+
+
+/* ========================================================================== */
+/* Main Heading                                                               */
+/* ========================================================================== */
+
+/* Styles the main heading */
+h1{
+
+    /* Centers the text */
+    text-align:center;
+
+    /* Changes the text color */
+    color:#0d6efd;
+
+    /* Adds spacing below the heading */
+    margin-bottom:20px;
+
+    /* Increases the font size */
+    font-size:38px;
+
+}
+
+
+/* ========================================================================== */
+/* Section Headings                                                           */
+/* ========================================================================== */
+
+/* Styles all level-2 headings */
+h2{
+
+    /* Changes the heading color */
+    color:#198754;
+
+    /* Adds spacing above each heading */
+    margin-top:30px;
+
+    /* Adds spacing below each heading */
+    margin-bottom:15px;
+
+    /* Displays a border on the left */
+    border-left:6px solid #198754;
+
+    /* Adds spacing inside the border */
+    padding-left:12px;
+
+}
+
+
+/* ========================================================================== */
+/* Paragraph Styling                                                          */
+/* ========================================================================== */
+
+/* Styles all paragraphs */
+p{
+
+    /* Adds spacing below paragraphs */
+    margin-bottom:18px;
+
+    /* Justifies the paragraph text */
+    text-align:justify;
+
+}
+
+
+/* ========================================================================== */
+/* Introduction Paragraph                                                     */
+/* ========================================================================== */
+
+/* Styles the introduction paragraph */
+.introduction{
+
+    /* Changes the font size */
+    font-size:18px;
+
+    /* Makes the text italic */
+    font-style:italic;
+
+    /* Changes the text color */
+    color:#555555;
+
+}
+
+
+/* ========================================================================== */
+/* Horizontal Line                                                            */
+/* ========================================================================== */
+
+/* Styles every horizontal line */
+hr{
+
+    /* Adds vertical spacing */
+    margin:35px 0;
+
+    /* Removes the default border */
+    border:none;
+
+    /* Creates a custom horizontal line */
+    border-top:2px solid #dddddd;
+
+}
+
+
+/* ========================================================================== */
+/* Table Styling                                                              */
+/* ========================================================================== */
+
+/* Styles the comparison table */
+table{
+
+    /* Makes the table occupy full width */
+    width:100%;
+
+    /* Removes spacing between table cells */
+    border-collapse:collapse;
+
+    /* Adds spacing above the table */
+    margin-top:20px;
+
+}
+
+
+/* Styles table headers and table cells */
+th,
+td{
+
+    /* Creates cell borders */
+    border:1px solid #cccccc;
+
+    /* Adds spacing inside cells */
+    padding:12px;
+
+    /* Aligns text to the left */
+    text-align:left;
+
+}
+
+
+/* Styles table header cells */
+th{
+
+    /* Changes the background color */
+    background-color:#0d6efd;
+
+    /* Changes the text color */
+    color:white;
+
+}
+
+
+/* ========================================================================== */
+/* Example 1 : ::first-line                                                   */
+/* ========================================================================== */
+
+/* Selects only the first rendered line */
+.first-line-demo::first-line{
+
+    /* Changes the text color */
+    color:#dc3545;
+
+    /* Makes the text bold */
+    font-weight:bold;
+
+    /* Converts text to uppercase */
+    text-transform:uppercase;
+
+    /* Increases spacing between letters */
+    letter-spacing:1px;
+
+}
+
+
+/* ========================================================================== */
+/* Example 2 : ::first-letter                                                 */
+/* ========================================================================== */
+
+/* Selects only the first letter */
+.first-letter-demo::first-letter{
+
+    /* Increases the font size */
+    font-size:50px;
+
+    /* Makes the first letter bold */
+    font-weight:bold;
+
+    /* Changes the text color */
+    color:#0d6efd;
+
+    /* Adds spacing on the right side */
+    margin-right:6px;
+
+    /* Aligns the letter to the left */
+    float:left;
+
+    /* Adjusts line height */
+    line-height:1;
+
+}
+
+/* ========================================================================== */
+/* Example 3 : ::before                                                       */
+/* ========================================================================== */
+
+/* Styles every list item inside the before-demo list */
+.before-demo li{
+
+    /* Removes the default bullet point */
+    list-style:none;
+
+    /* Adds spacing below each list item */
+    margin-bottom:12px;
+
+    /* Adds spacing inside each list item */
+    padding:10px;
+
+    /* Sets the background color */
+    background-color:#f8f9fa;
+
+    /* Displays a colored border on the left */
+    border-left:5px solid #0d6efd;
+
+    /* Rounds the corners */
+    border-radius:5px;
+
+}
+
+
+/* Selects the virtual content before each list item */
+.before-demo li::before{
+
+    /* Generates a check mark before every list item */
+    content:"✔ ";
+
+    /* Changes the generated content color */
+    color:#198754;
+
+    /* Makes the generated content bold */
+    font-weight:bold;
+
+    /* Adds spacing after the generated content */
+    margin-right:8px;
+
+}
+
+
+/* ========================================================================== */
+/* Example 4 : ::after                                                        */
+/* ========================================================================== */
+
+/* Styles the demonstration paragraph */
+.after-demo{
+
+    /* Makes the text bold */
+    font-weight:bold;
+
+    /* Changes the text color */
+    color:#333333;
+
+}
+
+
+/* Selects the virtual content after the paragraph */
+.after-demo::after{
+
+    /* Generates text after the paragraph */
+    content:" ✔ Successfully Applied";
+
+    /* Changes the generated text color */
+    color:#198754;
+
+    /* Makes the generated text bold */
+    font-weight:bold;
+
+    /* Adds spacing before the generated content */
+    margin-left:8px;
+
+}
+
+
+/* ========================================================================== */
+/* Ordered List Styling                                                       */
+/* ========================================================================== */
+
+/* Styles every ordered list */
+ol{
+
+    /* Adds spacing on the left side */
+    margin-left:30px;
+
+    /* Adds spacing below the list */
+    margin-bottom:20px;
+
+}
+
+
+/* Styles every ordered list item */
+ol li{
+
+    /* Adds spacing below each item */
+    margin-bottom:10px;
+
+}
+
+
+/* ========================================================================== */
+/* Unordered List Styling                                                     */
+/* ========================================================================== */
+
+/* Styles every unordered list */
+ul{
+
+    /* Adds spacing on the left side */
+    margin-left:30px;
+
+    /* Adds spacing below the list */
+    margin-bottom:20px;
+
+}
+
+
+/* Styles every unordered list item */
+ul li{
+
+    /* Adds spacing below each item */
+    margin-bottom:10px;
+
+}
+
+
+/* ========================================================================== */
+/* Footer Styling                                                             */
+/* ========================================================================== */
+
+/* Styles the footer */
+footer{
+
+    /* Adds spacing above the footer */
+    margin-top:40px;
+
+    /* Adds spacing inside the footer */
+    padding-top:20px;
+
+    /* Displays a border above the footer */
+    border-top:2px solid #dddddd;
+
+    /* Centers the footer text */
+    text-align:center;
+
+}
+
+
+/* Styles the footer paragraph */
+footer p{
+
+    /* Changes the text color */
+    color:#666666;
+
+    /* Makes the text italic */
+    font-style:italic;
+
+    /* Removes the default paragraph margin */
+    margin:0;
+
+}
+
+
+/* ========================================================================== */
+/* Responsive Design                                                          */
+/* ========================================================================== */
+
+/* Applies styles on tablets and mobile devices */
+@media (max-width:768px){
+
+    /* Styles the main container */
+    .container{
+
+        /* Reduces the internal spacing */
+        padding:20px;
+
+    }
+
+    /* Styles the main heading */
+    h1{
+
+        /* Reduces the font size */
+        font-size:30px;
+
+    }
+
+    /* Styles every level-2 heading */
+    h2{
+
+        /* Reduces the font size */
+        font-size:24px;
+
+    }
+
+    /* Styles table header and table data cells */
+    th,
+    td{
+
+        /* Reduces the spacing inside table cells */
+        padding:8px;
+
+    }
+
+    /* Styles the first letter demonstration */
+    .first-letter-demo::first-letter{
+
+        /* Reduces the font size */
+        font-size:40px;
+
+    }
+
+}
