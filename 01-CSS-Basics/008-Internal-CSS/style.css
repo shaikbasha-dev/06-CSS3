@@ -1,0 +1,88 @@
+/*
+===============================================================================
+File Name      : style.css
+Topic          : Internal CSS
+Repository     : 06-CSS3
+Description    : Provides the base layout for the Internal CSS demonstration.
+                 This file intentionally contains only minimal styles because
+                 the primary objective of this topic is to demonstrate Internal
+                 CSS using the <style> element inside the HTML document.
+Author         : Shaik Mahaboob Basha
+===============================================================================
+*/
+
+/*==============================================================================
+    Global Styles
+==============================================================================*/
+
+/* Applies styles to the entire webpage */
+body {
+
+    /* Removes the default browser margin */
+    margin: 0;
+
+    /* Removes the default browser padding */
+    padding: 0;
+
+    /* Sets the default font family */
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/*==============================================================================
+    Page Layout
+==============================================================================*/
+
+/*
+    This class provides a simple layout for the webpage.
+
+    Note:
+    ---------------------------------------------------------------------------
+    The visual appearance of this webpage is intentionally controlled by the
+    Internal CSS written inside the <style> element of index.html.
+
+    This stylesheet exists only to maintain a consistent repository structure,
+    where every topic contains:
+
+    • README.md
+    • index.html
+    • style.css
+
+    Learners should focus on the Internal CSS present in index.html.
+    ---------------------------------------------------------------------------
+*/
+.container {
+
+    /* Sets the maximum content width */
+    max-width: 1200px;
+
+    /* Centers the container horizontally */
+    margin: 0 auto;
+
+    /* Adds internal spacing */
+    padding: 20px;
+
+}
+
+/*==============================================================================
+    Educational Note
+==============================================================================*/
+
+/*
+===============================================================================
+Why is this stylesheet intentionally minimal?
+
+Internal CSS stores all styling rules inside the HTML document using the
+<style> element.
+
+If extensive styles were added here, learners might incorrectly assume that
+the webpage is being styled by External CSS instead of Internal CSS.
+
+Keeping this file minimal helps clearly demonstrate the purpose and behavior
+of Internal CSS.
+
+In professional web development, External CSS is generally preferred for
+medium and large applications because it improves maintainability,
+reusability, and scalability.
+===============================================================================
+*/
