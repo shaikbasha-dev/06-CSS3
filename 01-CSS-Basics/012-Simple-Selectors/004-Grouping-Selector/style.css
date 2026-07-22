@@ -1,0 +1,308 @@
+/*
+===============================================================================
+File Name      : style.css
+Topic          : Grouping Selector
+Repository     : 06-CSS3
+Description    : Demonstrates how CSS Grouping Selectors apply identical
+                 styles to multiple HTML elements using commas.
+Author         : Shaik Mahaboob Basha
+===============================================================================
+*/
+
+/*==============================================================================
+    Universal Selector
+==============================================================================*/
+
+/*
+    Resets the default browser spacing.
+*/
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+/*==============================================================================
+    Body
+==============================================================================*/
+
+/* Styles the webpage body */
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #f4f6f9;
+
+    color: #333333;
+
+    line-height: 1.7;
+
+    padding: 30px;
+
+}
+
+/*==============================================================================
+    Container
+==============================================================================*/
+
+/*
+    Used only for page layout.
+*/
+
+.container {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    background-color: #ffffff;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.10);
+
+}
+
+/*==============================================================================
+    Grouping Selector
+    Headings
+==============================================================================*/
+
+/*
+    Applies identical styles to multiple heading elements.
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+
+    color: #0d6efd;
+
+    margin-bottom: 15px;
+
+    font-weight: bold;
+
+}
+
+/*==============================================================================
+    Grouping Selector
+    Paragraphs and List Items
+==============================================================================*/
+
+/*
+    Styles paragraphs and list items together.
+*/
+
+p,
+li {
+
+    font-size: 17px;
+
+    color: #444444;
+
+    margin-bottom: 10px;
+
+}
+
+/*==============================================================================
+    Grouping Selector
+    Sections and Horizontal Rules
+==============================================================================*/
+
+/*
+    Adds spacing to sections and horizontal rules.
+*/
+
+section,
+hr {
+
+    margin: 30px 0;
+
+}
+
+/*==============================================================================
+    Grouping Selector
+    Buttons and Input Fields
+==============================================================================*/
+
+/*
+    Gives buttons and input fields a consistent appearance.
+*/
+
+button,
+input {
+
+    padding: 12px;
+
+    font-size: 16px;
+
+    border: 1px solid #cccccc;
+
+    border-radius: 5px;
+
+    margin-right: 10px;
+
+    margin-bottom: 10px;
+
+}
+
+/*==============================================================================
+    Individual Button Styling
+==============================================================================*/
+
+/*
+    Additional styling only for buttons.
+*/
+
+button {
+
+    background-color: #198754;
+
+    color: white;
+
+    cursor: pointer;
+
+    border: none;
+
+}
+
+/*==============================================================================
+    Individual Input Styling
+==============================================================================*/
+
+/*
+    Additional styling only for input fields.
+*/
+
+input {
+
+    width: 250px;
+
+}
+
+/*==============================================================================
+    Grouping Selector
+    Table Elements
+==============================================================================*/
+
+/*
+    Styles table headers and table cells together.
+*/
+
+th,
+td {
+
+    border: 1px solid #cccccc;
+
+    padding: 12px;
+
+    text-align: center;
+
+}
+
+/*
+    Styles the table.
+*/
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+}
+
+/*
+    Styles only table headers.
+*/
+
+th {
+
+    background-color: #0d6efd;
+
+    color: white;
+
+}
+
+/*==============================================================================
+    Grouping Selector
+    Header and Footer
+==============================================================================*/
+
+/*
+    Applies the same styles to both header and footer.
+*/
+
+header,
+footer {
+
+    background-color: #343a40;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    border-radius: 8px;
+
+}
+
+/*==============================================================================
+    Unordered List
+==============================================================================*/
+
+ul {
+
+    padding-left: 25px;
+
+}
+
+/*==============================================================================
+    Responsive Design
+==============================================================================*/
+
+@media (max-width: 768px) {
+
+    .container {
+
+        padding: 20px;
+
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+
+        font-size: 24px;
+
+    }
+
+    button,
+    input {
+
+        width: 100%;
+
+        margin-bottom: 12px;
+
+    }
+
+    table {
+
+        font-size: 14px;
+
+    }
+
+}
