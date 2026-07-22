@@ -1,0 +1,262 @@
+<!--
+===============================================================================
+File Name      : index.html
+Topic          : External CSS
+Repository     : 06-CSS3
+Description    : Demonstrates how External CSS is used to style HTML elements
+                 using a separate stylesheet.
+Author         : Shaik Mahaboob Basha
+===============================================================================
+-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!-- Specifies the character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the webpage responsive on all devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title displayed in the browser tab -->
+    <title>External CSS</title>
+
+    <!--
+        Links the external stylesheet.
+
+        All styling used in this webpage is written inside style.css.
+    -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Main container -->
+    <div class="container">
+
+        <!-- Main heading -->
+        <h1>External CSS</h1>
+
+        <!-- Introduction -->
+        <p class="intro">
+
+            External CSS stores all styling rules inside a separate stylesheet.
+            One stylesheet can be shared by multiple HTML pages.
+
+        </p>
+
+        <hr>
+
+        <!-- Example 1 -->
+        <section>
+
+            <h2>Example 1 : Styling Headings</h2>
+
+            <h3 class="primary-heading">
+
+                Welcome to External CSS
+
+            </h3>
+
+            <p>
+
+                The heading above is completely styled using the external
+                stylesheet.
+
+            </p>
+
+        </section>
+
+        <hr>
+
+        <!-- Example 2 -->
+        <section>
+
+            <h2>Example 2 : Styling Paragraphs</h2>
+
+            <p class="highlight">
+
+                This paragraph demonstrates styling using an external CSS class.
+
+            </p>
+
+            <p class="highlight">
+
+                Multiple HTML elements can reuse the same CSS class.
+
+            </p>
+
+        </section>
+
+        <hr>
+
+        <!-- Example 3 -->
+        <section>
+
+            <h2>Example 3 : Styling Buttons</h2>
+
+            <button class="btn">
+
+                Save
+
+            </button>
+
+            <button class="btn">
+
+                Update
+
+            </button>
+
+            <button class="btn">
+
+                Delete
+
+            </button>
+
+        </section>
+
+        <hr>
+
+        <!-- Example 4 -->
+        <section>
+
+            <h2>Example 4 : Styling Cards</h2>
+
+            <div class="card">
+
+                <h3>HTML</h3>
+
+                <p>
+
+                    HTML provides the structure of a webpage.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>CSS</h3>
+
+                <p>
+
+                    CSS is responsible for the presentation of a webpage.
+
+                </p>
+
+            </div>
+
+        </section>
+
+        <hr>
+
+        <!-- Example 5 -->
+        <section>
+
+            <h2>Example 5 : Styling a Table</h2>
+
+            <table>
+
+                <tr>
+
+                    <th>Technology</th>
+
+                    <th>Purpose</th>
+
+                </tr>
+
+                <tr>
+
+                    <td>HTML</td>
+
+                    <td>Structure</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>CSS</td>
+
+                    <td>Presentation</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>JavaScript</td>
+
+                    <td>Interactivity</td>
+
+                </tr>
+
+            </table>
+
+        </section>
+
+        <hr>
+
+        <!-- Example 6 -->
+        <section>
+
+            <h2>Example 6 : Navigation Menu</h2>
+
+            <nav>
+
+                <a href="#">Home</a>
+
+                <a href="#">Courses</a>
+
+                <a href="#">Projects</a>
+
+                <a href="#">Contact</a>
+
+            </nav>
+
+        </section>
+
+        <hr>
+
+        <!-- Example 7 -->
+        <section>
+
+            <h2>Advantages of External CSS</h2>
+
+            <ul>
+
+                <li>Supports reusable styles.</li>
+
+                <li>Keeps HTML clean and readable.</li>
+
+                <li>Easy to maintain.</li>
+
+                <li>One stylesheet can style multiple webpages.</li>
+
+                <li>Industry-standard approach.</li>
+
+            </ul>
+
+        </section>
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+
+            <p>
+
+                External CSS is the recommended method for developing
+                maintainable, scalable, and professional web applications.
+
+            </p>
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
