@@ -1,0 +1,326 @@
+/*
+===============================================================================
+File Name      : style.css
+Topic          : Ways to Apply CSS
+Repository     : 06-CSS3
+Description    : Styles the webpage demonstrating Inline CSS, Internal CSS,
+                 and External CSS using a clean and responsive layout.
+Author         : Shaik Mahaboob Basha
+===============================================================================
+*/
+
+/*==============================================================================
+    Global Styles
+==============================================================================*/
+
+/* Styles the entire webpage */
+body {
+
+    /* Sets the default font family */
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* Removes the default browser margin */
+    margin: 0;
+
+    /* Removes the default browser padding */
+    padding: 0;
+
+    /* Sets a light background color */
+    background-color: #f4f6f9;
+
+    /* Sets the default text color */
+    color: #333333;
+
+    /* Improves readability */
+    line-height: 1.7;
+
+}
+
+/*==============================================================================
+    Main Container
+==============================================================================*/
+
+/* Styles the main content container */
+.container {
+
+    /* Limits the maximum width */
+    max-width: 1000px;
+
+    /* Centers the container horizontally */
+    margin: 40px auto;
+
+    /* Adds internal spacing */
+    padding: 30px;
+
+    /* Sets the background color */
+    background-color: #ffffff;
+
+    /* Rounds the corners */
+    border-radius: 10px;
+
+    /* Adds a subtle shadow */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.10);
+
+}
+
+/*==============================================================================
+    Main Heading
+==============================================================================*/
+
+/* Styles the main heading */
+h1 {
+
+    /* Centers the heading */
+    text-align: center;
+
+    /* Sets the text color */
+    color: #0d6efd;
+
+    /* Sets the font size */
+    font-size: 38px;
+
+    /* Adds spacing below the heading */
+    margin-bottom: 20px;
+
+}
+
+/*==============================================================================
+    Introduction
+==============================================================================*/
+
+/* Styles the introductory paragraph */
+.intro {
+
+    /* Centers the text */
+    text-align: center;
+
+    /* Increases the font size */
+    font-size: 18px;
+
+    /* Makes the text italic */
+    font-style: italic;
+
+    /* Adds spacing below */
+    margin-bottom: 25px;
+
+}
+
+/*==============================================================================
+    Section Headings
+==============================================================================*/
+
+/* Styles all section headings */
+h2 {
+
+    /* Sets the heading color */
+    color: #1f4e79;
+
+    /* Adds a decorative left border */
+    border-left: 5px solid #0d6efd;
+
+    /* Adds spacing between the border and text */
+    padding-left: 10px;
+
+    /* Adds spacing above */
+    margin-top: 35px;
+
+    /* Adds spacing below */
+    margin-bottom: 15px;
+
+}
+
+/*==============================================================================
+    Paragraphs
+==============================================================================*/
+
+/* Styles all paragraphs */
+p {
+
+    /* Sets the font size */
+    font-size: 16px;
+
+    /* Adds spacing below */
+    margin-bottom: 15px;
+
+}
+
+/*==============================================================================
+    External CSS Demonstration
+==============================================================================*/
+
+/* Styles the paragraph used to demonstrate External CSS */
+.external-example {
+
+    /* Sets the text color */
+    color: #0d6efd;
+
+    /* Makes the text bold */
+    font-weight: bold;
+
+    /* Sets a light blue background */
+    background-color: #eaf4ff;
+
+    /* Adds internal spacing */
+    padding: 15px;
+
+    /* Adds a blue border on the left */
+    border-left: 5px solid #0d6efd;
+
+    /* Rounds the corners */
+    border-radius: 5px;
+
+}
+
+/*==============================================================================
+    Horizontal Rule
+==============================================================================*/
+
+/* Styles horizontal separators */
+hr {
+
+    /* Removes the default border */
+    border: none;
+
+    /* Creates a custom separator */
+    border-top: 2px solid #dddddd;
+
+    /* Adds spacing */
+    margin: 30px 0;
+
+}
+
+/*==============================================================================
+    Table
+==============================================================================*/
+
+/* Styles the comparison table */
+table {
+
+    /* Makes the table occupy the full width */
+    width: 100%;
+
+    /* Removes spacing between borders */
+    border-collapse: collapse;
+
+    /* Adds spacing above the table */
+    margin-top: 20px;
+
+}
+
+/* Styles table headers and table cells */
+th,
+td {
+
+    /* Adds borders */
+    border: 1px solid #cccccc;
+
+    /* Adds internal spacing */
+    padding: 14px;
+
+    /* Aligns text to the left */
+    text-align: left;
+
+}
+
+/* Styles table headers */
+th {
+
+    /* Sets the background color */
+    background-color: #0d6efd;
+
+    /* Sets the text color */
+    color: white;
+
+}
+
+/* Applies alternating row colors */
+tbody tr:nth-child(even) {
+
+    /* Sets a light background */
+    background-color: #f8f9fa;
+
+}
+
+/* Highlights rows on hover */
+tbody tr:hover {
+
+    /* Changes the background color */
+    background-color: #e8f1ff;
+
+}
+
+/*==============================================================================
+    Footer
+==============================================================================*/
+
+/* Styles the footer */
+footer {
+
+    /* Centers the text */
+    text-align: center;
+
+    /* Adds spacing above */
+    margin-top: 40px;
+
+    /* Creates a top border */
+    border-top: 2px solid #dddddd;
+
+    /* Adds spacing above the border */
+    padding-top: 20px;
+
+}
+
+/* Styles footer paragraph */
+footer p {
+
+    /* Makes the text italic */
+    font-style: italic;
+
+    /* Changes the text color */
+    color: #666666;
+
+}
+
+/*==============================================================================
+    Responsive Design
+==============================================================================*/
+
+/* Applies styles for tablets and mobile devices */
+@media (max-width: 768px) {
+
+    /* Styles the container */
+    .container {
+
+        /* Reduces outer spacing */
+        margin: 15px;
+
+        /* Reduces inner spacing */
+        padding: 20px;
+
+    }
+
+    /* Styles the main heading */
+    h1 {
+
+        /* Reduces font size */
+        font-size: 30px;
+
+    }
+
+    /* Styles section headings */
+    h2 {
+
+        /* Reduces font size */
+        font-size: 24px;
+
+    }
+
+    /* Styles the table */
+    table {
+
+        /* Reduces font size */
+        font-size: 14px;
+
+    }
+
+}
