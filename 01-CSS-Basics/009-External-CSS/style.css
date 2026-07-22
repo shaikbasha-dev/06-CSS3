@@ -1,0 +1,442 @@
+/*
+===============================================================================
+File Name      : style.css
+Topic          : External CSS
+Repository     : 06-CSS3
+Description    : Demonstrates how all webpage styling can be managed using
+                 a separate external stylesheet.
+Author         : Shaik Mahaboob Basha
+===============================================================================
+*/
+
+/*==============================================================================
+    Global Styles
+==============================================================================*/
+
+/* Styles the entire webpage */
+body {
+
+    /* Sets the default font family */
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* Removes the default browser margin */
+    margin: 0;
+
+    /* Removes the default browser padding */
+    padding: 0;
+
+    /* Sets the page background color */
+    background-color: #f4f6f9;
+
+    /* Sets the default text color */
+    color: #333333;
+
+    /* Improves text readability */
+    line-height: 1.7;
+
+}
+
+/*==============================================================================
+    Main Container
+==============================================================================*/
+
+/* Styles the main container */
+.container {
+
+    /* Sets the maximum content width */
+    max-width: 1100px;
+
+    /* Centers the container horizontally */
+    margin: 40px auto;
+
+    /* Adds internal spacing */
+    padding: 30px;
+
+    /* Sets the container background */
+    background-color: #ffffff;
+
+    /* Rounds the container corners */
+    border-radius: 10px;
+
+    /* Adds a subtle shadow */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.10);
+
+}
+
+/*==============================================================================
+    Headings
+==============================================================================*/
+
+/* Styles the main heading */
+h1 {
+
+    /* Centers the heading */
+    text-align: center;
+
+    /* Sets the heading color */
+    color: #0d6efd;
+
+    /* Sets the font size */
+    font-size: 38px;
+
+    /* Adds spacing below */
+    margin-bottom: 20px;
+
+}
+
+/* Styles section headings */
+h2 {
+
+    /* Sets the text color */
+    color: #1f4e79;
+
+    /* Creates a decorative left border */
+    border-left: 5px solid #0d6efd;
+
+    /* Adds spacing between border and text */
+    padding-left: 10px;
+
+    /* Adds spacing above */
+    margin-top: 35px;
+
+    /* Adds spacing below */
+    margin-bottom: 20px;
+
+}
+
+/* Styles the reusable heading class */
+.primary-heading {
+
+    /* Sets the heading color */
+    color: #198754;
+
+    /* Sets the font size */
+    font-size: 28px;
+
+}
+
+/*==============================================================================
+    Paragraph Styles
+==============================================================================*/
+
+/* Styles the introduction paragraph */
+.intro {
+
+    /* Centers the text */
+    text-align: center;
+
+    /* Increases the font size */
+    font-size: 18px;
+
+    /* Makes the text italic */
+    font-style: italic;
+
+    /* Adds spacing below */
+    margin-bottom: 25px;
+
+}
+
+/* Styles highlighted paragraphs */
+.highlight {
+
+    /* Sets the background color */
+    background-color: #e8f4ff;
+
+    /* Adds a left border */
+    border-left: 5px solid #0d6efd;
+
+    /* Adds internal spacing */
+    padding: 15px;
+
+    /* Adds spacing below */
+    margin-bottom: 15px;
+
+    /* Rounds the corners */
+    border-radius: 6px;
+
+}
+
+/*==============================================================================
+    Buttons
+==============================================================================*/
+
+/* Styles reusable buttons */
+.btn {
+
+    /* Sets the background color */
+    background-color: #0d6efd;
+
+    /* Sets the text color */
+    color: white;
+
+    /* Removes the border */
+    border: none;
+
+    /* Adds internal spacing */
+    padding: 12px 20px;
+
+    /* Adds spacing between buttons */
+    margin-right: 10px;
+
+    /* Rounds the corners */
+    border-radius: 5px;
+
+    /* Displays pointer cursor */
+    cursor: pointer;
+
+    /* Adds a smooth transition */
+    transition: background-color 0.3s ease;
+
+}
+
+/* Changes button appearance on hover */
+.btn:hover {
+
+    /* Changes the background color */
+    background-color: #084298;
+
+}
+
+/*==============================================================================
+    Cards
+==============================================================================*/
+
+/* Styles reusable content cards */
+.card {
+
+    /* Sets the background color */
+    background-color: #ffffff;
+
+    /* Creates a border */
+    border: 1px solid #dddddd;
+
+    /* Adds internal spacing */
+    padding: 20px;
+
+    /* Adds spacing below */
+    margin-bottom: 20px;
+
+    /* Rounds the corners */
+    border-radius: 8px;
+
+    /* Adds a subtle shadow */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+}
+
+/*==============================================================================
+    Tables
+==============================================================================*/
+
+/* Styles tables */
+table {
+
+    /* Makes the table occupy full width */
+    width: 100%;
+
+    /* Removes spacing between borders */
+    border-collapse: collapse;
+
+}
+
+/* Styles table cells */
+th,
+td {
+
+    /* Creates borders */
+    border: 1px solid #cccccc;
+
+    /* Adds internal spacing */
+    padding: 12px;
+
+    /* Centers the text */
+    text-align: center;
+
+}
+
+/* Styles table headers */
+th {
+
+    /* Sets the background color */
+    background-color: #0d6efd;
+
+    /* Sets the text color */
+    color: white;
+
+}
+
+/* Applies alternate row colors */
+tbody tr:nth-child(even) {
+
+    /* Sets a light background */
+    background-color: #f8f9fa;
+
+}
+
+/*==============================================================================
+    Navigation Menu
+==============================================================================*/
+
+/* Styles the navigation container */
+nav {
+
+    /* Uses Flexbox */
+    display: flex;
+
+    /* Adds spacing between links */
+    gap: 20px;
+
+    /* Centers the navigation */
+    justify-content: center;
+
+    /* Adds spacing above and below */
+    margin: 20px 0;
+
+}
+
+/* Styles navigation links */
+nav a {
+
+    /* Removes underline */
+    text-decoration: none;
+
+    /* Sets the text color */
+    color: #0d6efd;
+
+    /* Makes text bold */
+    font-weight: bold;
+
+}
+
+/* Navigation hover effect */
+nav a:hover {
+
+    /* Adds underline */
+    text-decoration: underline;
+
+}
+
+/*==============================================================================
+    Lists
+==============================================================================*/
+
+/* Styles unordered lists */
+ul {
+
+    /* Adds left spacing */
+    padding-left: 25px;
+
+}
+
+/* Styles list items */
+li {
+
+    /* Adds spacing below */
+    margin-bottom: 10px;
+
+}
+
+/*==============================================================================
+    Horizontal Rule
+==============================================================================*/
+
+/* Styles horizontal separators */
+hr {
+
+    /* Removes the default border */
+    border: none;
+
+    /* Creates a custom separator */
+    border-top: 2px solid #dddddd;
+
+    /* Adds spacing */
+    margin: 30px 0;
+
+}
+
+/*==============================================================================
+    Footer
+==============================================================================*/
+
+/* Styles the footer */
+footer {
+
+    /* Centers the text */
+    text-align: center;
+
+    /* Adds spacing above */
+    margin-top: 40px;
+
+    /* Creates a top border */
+    border-top: 2px solid #dddddd;
+
+    /* Adds spacing above the border */
+    padding-top: 20px;
+
+}
+
+/* Styles footer paragraph */
+footer p {
+
+    /* Makes the text italic */
+    font-style: italic;
+
+    /* Changes the text color */
+    color: #666666;
+
+}
+
+/*==============================================================================
+    Responsive Design
+==============================================================================*/
+
+/* Applies styles for tablets and mobile devices */
+@media (max-width: 768px) {
+
+    /* Styles the container */
+    .container {
+
+        /* Reduces outer spacing */
+        margin: 15px;
+
+        /* Reduces inner spacing */
+        padding: 20px;
+
+    }
+
+    /* Styles the main heading */
+    h1 {
+
+        /* Reduces font size */
+        font-size: 30px;
+
+    }
+
+    /* Styles section headings */
+    h2 {
+
+        /* Reduces font size */
+        font-size: 24px;
+
+    }
+
+    /* Displays navigation links vertically */
+    nav {
+
+        /* Changes the layout direction */
+        flex-direction: column;
+
+        /* Centers the links */
+        align-items: center;
+
+    }
+
+    /* Styles buttons */
+    .btn {
+
+        /* Adds spacing below each button */
+        margin-bottom: 10px;
+
+    }
+
+}
