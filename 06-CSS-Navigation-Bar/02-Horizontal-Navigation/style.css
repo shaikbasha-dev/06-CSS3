@@ -1,0 +1,203 @@
+/*==============================================================*/
+/*                                                              */
+/*           CSS Horizontal Navigation Bar Demonstration         */
+/*                                                              */
+/*  File Name : style.css                                       */
+/*  Description : Styles a professional Horizontal Navigation   */
+/*                Bar using modern CSS techniques.              */
+/*                                                              */
+/*==============================================================*/
+
+
+/*==============================================================*/
+/*                     Universal Selector                       */
+/*==============================================================*/
+
+/*
+    Removes the browser's default margin and padding
+    from all HTML elements.
+
+    Also changes the box model to border-box so that
+    padding and borders are included in the element's
+    total width and height.
+*/
+*{
+
+    /* Removes default outer spacing */
+    margin: 0;
+
+    /* Removes default inner spacing */
+    padding: 0;
+
+    /* Uses the modern box model */
+    box-sizing: border-box;
+
+}
+
+
+/*==============================================================*/
+/*                        Body Styling                          */
+/*==============================================================*/
+
+body{
+
+    /* Sets a professional font family */
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* Applies a light background color */
+    background-color: #f4f4f4;
+
+}
+
+
+/*==============================================================*/
+/*                  Navigation Container                        */
+/*==============================================================*/
+
+nav{
+
+    /* Dark blue background */
+    background-color: #2c3e50;
+
+    /* Creates a subtle shadow below the navigation bar */
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.20);
+
+}
+
+
+/*==============================================================*/
+/*                  Navigation List Styling                     */
+/*==============================================================*/
+
+nav ul{
+
+    /* Removes default bullets */
+    list-style: none;
+
+    /* Displays all menu items horizontally */
+    display: flex;
+
+    /* Aligns menu items vertically */
+    align-items: center;
+
+    /* Starts menu items from the left */
+    justify-content: flex-start;
+
+}
+
+
+/*==============================================================*/
+/*                  Navigation List Items                       */
+/*==============================================================*/
+
+nav ul li{
+
+    /* No additional styling required for this example */
+}
+
+
+/*==============================================================*/
+/*                  Navigation Hyperlinks                       */
+/*==============================================================*/
+
+nav ul li a{
+
+    /* Makes the complete area clickable */
+    display: block;
+
+    /* White navigation text */
+    color: white;
+
+    /* Removes underline */
+    text-decoration: none;
+
+    /* Internal spacing */
+    padding: 18px 24px;
+
+    /* Medium font size */
+    font-size: 17px;
+
+    /* Semi-bold text */
+    font-weight: 600;
+
+    /* Smooth hover animation */
+    transition: background-color 0.3s ease;
+
+}
+
+
+/*==============================================================*/
+/*                     Hover Effect                             */
+/*==============================================================*/
+
+nav ul li a:hover{
+
+    /* Blue background when mouse hovers */
+    background-color: #3498db;
+
+}
+
+
+/*==============================================================*/
+/*                     Active Navigation Link                   */
+/*==============================================================*/
+
+nav ul li a.active{
+
+    /* Indicates the current page */
+    background-color: #2980b9;
+
+}
+
+
+/*==============================================================*/
+/*                 Keyboard Accessibility                       */
+/*==============================================================*/
+
+nav ul li a:focus{
+
+    /* Yellow outline for keyboard users */
+    outline: 3px solid #f1c40f;
+
+    /* Keeps outline visible */
+    outline-offset: -3px;
+
+}
+
+
+/*==============================================================*/
+/*                  Responsive Navigation                       */
+/*==============================================================*/
+
+/*
+    On smaller screens, the navigation links
+    are displayed vertically for better readability.
+*/
+@media screen and (max-width:768px){
+
+    /* Displays menu items vertically */
+    nav ul{
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+    }
+
+    /* Adds a separator between menu items */
+    nav ul li{
+
+        border-bottom: 1px solid rgba(255,255,255,0.15);
+
+    }
+
+    /* Makes each navigation link occupy full width */
+    nav ul li a{
+
+        text-align: center;
+
+        padding: 16px;
+
+    }
+
+}
