@@ -1,0 +1,336 @@
+<!--
+===============================================================================
+File Name      : index.html
+Topic          : Internal CSS
+Repository     : 06-CSS3
+Description    : Demonstrates how Internal CSS is used to style HTML elements
+                 by defining CSS rules inside the <style> element.
+Author         : Shaik Mahaboob Basha
+===============================================================================
+-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!-- Specifies the character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the webpage responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title displayed in the browser tab -->
+    <title>Internal CSS</title>
+
+    <!--
+        Internal CSS starts here.
+        The following styles apply only to this HTML document.
+    -->
+    <style>
+
+        /* Styles the entire webpage */
+        body {
+
+            font-family: Arial, Helvetica, sans-serif;
+
+            background-color: #f4f6f9;
+
+            margin: 0;
+
+            padding: 20px;
+
+            color: #333333;
+
+        }
+
+        /* Styles the main heading */
+        h1 {
+
+            color: #0d6efd;
+
+            text-align: center;
+
+        }
+
+        /* Styles section headings */
+        h2 {
+
+            color: #1f4e79;
+
+        }
+
+        /* Styles paragraphs */
+        p {
+
+            font-size: 16px;
+
+            line-height: 1.7;
+
+        }
+
+        /* Styles the demonstration box */
+        .box {
+
+            background-color: #ffffff;
+
+            padding: 20px;
+
+            margin: 20px 0;
+
+            border-left: 5px solid #0d6efd;
+
+            border-radius: 6px;
+
+            box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+
+        }
+
+        /* Styles tables */
+        table {
+
+            width: 100%;
+
+            border-collapse: collapse;
+
+        }
+
+        /* Styles table headers and cells */
+        th,
+        td {
+
+            border: 1px solid #cccccc;
+
+            padding: 12px;
+
+            text-align: center;
+
+        }
+
+        /* Styles table header */
+        th {
+
+            background-color: #0d6efd;
+
+            color: white;
+
+        }
+
+        /* Styles buttons */
+        button {
+
+            background-color: green;
+
+            color: white;
+
+            border: none;
+
+            padding: 12px 20px;
+
+            border-radius: 5px;
+
+            cursor: pointer;
+
+        }
+
+        /* Button hover effect */
+        button:hover {
+
+            background-color: darkgreen;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Main Heading -->
+    <h1>Internal CSS</h1>
+
+    <!-- Introduction -->
+    <p>
+        Internal CSS allows multiple HTML elements within the same webpage
+        to share common styles. All CSS rules are written inside the
+        <strong>&lt;style&gt;</strong> element.
+    </p>
+
+    <hr>
+
+    <!-- Example 1 -->
+    <section>
+
+        <h2>Example 1 : Styling Headings</h2>
+
+        <div class="box">
+
+            <h3>Welcome to CSS</h3>
+
+            <p>
+                The heading and paragraph are styled using Internal CSS.
+            </p>
+
+        </div>
+
+    </section>
+
+    <hr>
+
+    <!-- Example 2 -->
+    <section>
+
+        <h2>Example 2 : Multiple Paragraphs</h2>
+
+        <div class="box">
+
+            <p>Paragraph One</p>
+
+            <p>Paragraph Two</p>
+
+            <p>Paragraph Three</p>
+
+        </div>
+
+    </section>
+
+    <hr>
+
+    <!-- Example 3 -->
+    <section>
+
+        <h2>Example 3 : Styling a Table</h2>
+
+        <table>
+
+            <tr>
+
+                <th>Technology</th>
+
+                <th>Category</th>
+
+            </tr>
+
+            <tr>
+
+                <td>HTML</td>
+
+                <td>Markup Language</td>
+
+            </tr>
+
+            <tr>
+
+                <td>CSS</td>
+
+                <td>Stylesheet Language</td>
+
+            </tr>
+
+        </table>
+
+    </section>
+
+    <hr>
+
+    <!-- Example 4 -->
+    <section>
+
+        <h2>Example 4 : Styling a Button</h2>
+
+        <button>
+
+            Click Here
+
+        </button>
+
+    </section>
+
+    <hr>
+
+    <!-- Example 5 -->
+    <section>
+
+        <h2>Example 5 : Reusing the Same Class</h2>
+
+        <div class="box">
+
+            This is the first box.
+
+        </div>
+
+        <div class="box">
+
+            This is the second box.
+
+        </div>
+
+        <div class="box">
+
+            This is the third box.
+
+        </div>
+
+    </section>
+
+    <hr>
+
+    <!-- Advantages -->
+    <section>
+
+        <h2>Advantages of Internal CSS</h2>
+
+        <ul>
+
+            <li>Styles multiple elements using one stylesheet.</li>
+
+            <li>Cleaner than Inline CSS.</li>
+
+            <li>Easy to maintain within a single webpage.</li>
+
+            <li>No external stylesheet required.</li>
+
+        </ul>
+
+    </section>
+
+    <hr>
+
+    <!-- Disadvantages -->
+    <section>
+
+        <h2>Disadvantages of Internal CSS</h2>
+
+        <ul>
+
+            <li>Cannot be reused across multiple webpages.</li>
+
+            <li>HTML file becomes larger.</li>
+
+            <li>Not suitable for large websites.</li>
+
+            <li>Difficult to maintain when many pages exist.</li>
+
+        </ul>
+
+    </section>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+
+            Internal CSS is ideal for learning, prototypes, and single-page
+            websites. For multi-page applications, External CSS is the
+            recommended approach.
+
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
