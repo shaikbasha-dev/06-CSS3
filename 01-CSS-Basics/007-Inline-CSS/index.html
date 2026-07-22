@@ -1,0 +1,251 @@
+<!--
+===============================================================================
+File Name      : index.html
+Topic          : Inline CSS
+Repository     : 06-CSS3
+Description    : Demonstrates how Inline CSS is used to style HTML elements
+                 using the style attribute.
+Author         : Shaik Mahaboob Basha
+===============================================================================
+-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!-- Defines the character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the webpage responsive on all screen sizes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title displayed in the browser tab -->
+    <title>Inline CSS</title>
+
+    <!-- External stylesheet used only for page layout -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Main container -->
+    <div class="container">
+
+        <!-- Main heading -->
+        <h1>Inline CSS</h1>
+
+        <!-- Introduction -->
+        <p class="intro">
+            Inline CSS applies styles directly to an HTML element using the
+            <strong>style</strong> attribute.
+        </p>
+
+        <hr>
+
+        <!-- Example 1 -->
+        <section>
+
+            <h2>Example 1 : Changing Text Color</h2>
+
+            <!-- Inline CSS changes the text color -->
+            <h3 style="color: blue;">
+                Welcome to CSS
+            </h3>
+
+        </section>
+
+        <hr>
+
+        <!-- Example 2 -->
+        <section>
+
+            <h2>Example 2 : Changing Background Color</h2>
+
+            <!-- Inline CSS changes background color -->
+            <p style="background-color: lightyellow;">
+
+                This paragraph has a light yellow background.
+
+            </p>
+
+        </section>
+
+        <hr>
+
+        <!-- Example 3 -->
+        <section>
+
+            <h2>Example 3 : Multiple CSS Properties</h2>
+
+            <!-- Multiple properties separated by semicolons -->
+            <p
+                style="
+                    color: white;
+                    background-color: darkblue;
+                    font-size: 20px;
+                    padding: 15px;
+                    border-radius: 8px;
+                ">
+
+                Multiple CSS properties are applied using Inline CSS.
+
+            </p>
+
+        </section>
+
+        <hr>
+
+        <!-- Example 4 -->
+        <section>
+
+            <h2>Example 4 : Styling a Button</h2>
+
+            <!-- Inline CSS applied to a button -->
+            <button
+                style="
+                    background-color: green;
+                    color: white;
+                    border: none;
+                    padding: 12px 20px;
+                    border-radius: 6px;
+                    cursor: pointer;
+                ">
+
+                Submit
+
+            </button>
+
+        </section>
+
+        <hr>
+
+        <!-- Example 5 -->
+        <section>
+
+            <h2>Example 5 : Styling an Image</h2>
+
+            <!-- Placeholder image -->
+            <img
+                src="https://via.placeholder.com/250x150"
+                alt="Sample Image"
+                style="
+                    border: 4px solid royalblue;
+                    border-radius: 10px;
+                    padding: 5px;
+                ">
+
+        </section>
+
+        <hr>
+
+        <!-- Example 6 -->
+        <section>
+
+            <h2>Example 6 : Styling a Table</h2>
+
+            <table>
+
+                <tr>
+
+                    <th style="background-color: royalblue; color: white;">
+                        Technology
+                    </th>
+
+                    <th style="background-color: royalblue; color: white;">
+                        Category
+                    </th>
+
+                </tr>
+
+                <tr>
+
+                    <td style="text-align: center;">
+                        HTML
+                    </td>
+
+                    <td style="text-align: center;">
+                        Markup Language
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td style="text-align: center;">
+                        CSS
+                    </td>
+
+                    <td style="text-align: center;">
+                        Stylesheet Language
+                    </td>
+
+                </tr>
+
+            </table>
+
+        </section>
+
+        <hr>
+
+        <!-- Advantages -->
+        <section>
+
+            <h2>Advantages</h2>
+
+            <ul>
+
+                <li>Simple to understand.</li>
+
+                <li>Useful for quick testing.</li>
+
+                <li>No external stylesheet required.</li>
+
+                <li>Suitable for temporary styling.</li>
+
+            </ul>
+
+        </section>
+
+        <hr>
+
+        <!-- Disadvantages -->
+        <section>
+
+            <h2>Disadvantages</h2>
+
+            <ul>
+
+                <li>Cannot reuse styles.</li>
+
+                <li>HTML becomes difficult to maintain.</li>
+
+                <li>Not suitable for large projects.</li>
+
+                <li>Mixes presentation with content.</li>
+
+            </ul>
+
+        </section>
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+
+            <p>
+
+                Inline CSS is useful for learning and quick demonstrations,
+                but External CSS should be preferred for professional web development.
+
+            </p>
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
