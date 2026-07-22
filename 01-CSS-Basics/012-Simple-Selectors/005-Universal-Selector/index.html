@@ -1,0 +1,215 @@
+<!--
+===============================================================================
+File Name      : index.html
+Topic          : Universal Selector
+Repository     : 06-CSS3
+Description    : Demonstrates how the CSS Universal Selector applies styles
+                 to every HTML element on a webpage.
+Author         : Shaik Mahaboob Basha
+===============================================================================
+-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!-- Specifies the character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the webpage responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title displayed in the browser tab -->
+    <title>Universal Selector</title>
+
+    <!-- Links the external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <!-- Main Heading -->
+        <h1>CSS Universal Selector</h1>
+
+        <!-- Introduction -->
+        <p>
+
+            The Universal Selector selects every HTML element on the webpage.
+            It is represented by the asterisk (<strong>*</strong>) symbol and
+            is commonly used to reset default browser styles.
+
+        </p>
+
+        <hr>
+
+        <!-- Example 1 -->
+        <section>
+
+            <h2>Example 1 : Headings</h2>
+
+            <h3>Heading Level Three</h3>
+
+            <h4>Heading Level Four</h4>
+
+            <h5>Heading Level Five</h5>
+
+            <p>
+
+                All elements automatically receive common styles applied by
+                the Universal Selector.
+
+            </p>
+
+        </section>
+
+        <hr>
+
+        <!-- Example 2 -->
+        <section>
+
+            <h2>Example 2 : Paragraphs</h2>
+
+            <p>
+
+                This is the first paragraph.
+
+            </p>
+
+            <p>
+
+                This is the second paragraph.
+
+            </p>
+
+            <p>
+
+                Every paragraph inherits the common styles.
+
+            </p>
+
+        </section>
+
+        <hr>
+
+        <!-- Example 3 -->
+        <section>
+
+            <h2>Example 3 : Lists</h2>
+
+            <ul>
+
+                <li>HTML</li>
+
+                <li>CSS</li>
+
+                <li>JavaScript</li>
+
+                <li>Bootstrap</li>
+
+            </ul>
+
+        </section>
+
+        <hr>
+
+        <!-- Example 4 -->
+        <section>
+
+            <h2>Example 4 : Form Elements</h2>
+
+            <input
+                type="text"
+                placeholder="Enter your name">
+
+            <br><br>
+
+            <button>
+
+                Submit
+
+            </button>
+
+        </section>
+
+        <hr>
+
+        <!-- Example 5 -->
+        <section>
+
+            <h2>Example 5 : Table</h2>
+
+            <table>
+
+                <tr>
+
+                    <th>Technology</th>
+
+                    <th>Category</th>
+
+                </tr>
+
+                <tr>
+
+                    <td>HTML</td>
+
+                    <td>Markup Language</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>CSS</td>
+
+                    <td>Style Sheet Language</td>
+
+                </tr>
+
+            </table>
+
+        </section>
+
+        <hr>
+
+        <!-- Example 6 -->
+        <section>
+
+            <h2>Example 6 : Image</h2>
+
+            <img
+                src="https://via.placeholder.com/250x150"
+                alt="Sample Image">
+
+        </section>
+
+        <hr>
+
+        <!-- Best Practices -->
+        <section>
+
+            <h2>Best Practices</h2>
+
+            <ul>
+
+                <li>Use the Universal Selector primarily for CSS resets.</li>
+
+                <li>Apply <strong>box-sizing: border-box</strong> globally.</li>
+
+                <li>Avoid unnecessary global styling.</li>
+
+                <li>Override global styles using specific selectors.</li>
+
+            </ul>
+
+        </section>
+
+    </div>
+
+</body>
+
+</html>
