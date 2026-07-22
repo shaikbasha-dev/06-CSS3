@@ -1,0 +1,299 @@
+/*
+===============================================================================
+File Name      : style.css
+Topic          : Universal Selector
+Repository     : 06-CSS3
+Description    : Demonstrates how the CSS Universal Selector applies common
+                 styles to every HTML element on a webpage.
+Author         : Shaik Mahaboob Basha
+===============================================================================
+*/
+
+/*==============================================================================
+    Universal Selector
+==============================================================================*/
+
+/*
+    Applies common styles to every HTML element.
+*/
+
+* {
+
+    /* Includes padding and border within total width and height */
+    box-sizing: border-box;
+
+    /* Removes default browser margin */
+    margin: 0;
+
+    /* Removes default browser padding */
+    padding: 0;
+
+    /* Sets the default font for all elements */
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/*==============================================================================
+    Body Element
+==============================================================================*/
+
+/*
+    Styles the webpage body.
+*/
+
+body {
+
+    /* Sets the background color */
+    background-color: #f4f6f9;
+
+    /* Sets the default text color */
+    color: #333333;
+
+    /* Improves text readability */
+    line-height: 1.7;
+
+    /* Adds spacing around the webpage */
+    padding: 30px;
+
+}
+
+/*==============================================================================
+    Container
+==============================================================================*/
+
+/*
+    Styles the main content container.
+*/
+
+.container {
+
+    /* Sets maximum width */
+    max-width: 1100px;
+
+    /* Centers the container */
+    margin: auto;
+
+    /* Sets background color */
+    background-color: #ffffff;
+
+    /* Adds internal spacing */
+    padding: 30px;
+
+    /* Rounds corners */
+    border-radius: 10px;
+
+    /* Adds shadow */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.10);
+
+}
+
+/*==============================================================================
+    Heading Elements
+==============================================================================*/
+
+h1 {
+
+    color: #0d6efd;
+
+    text-align: center;
+
+    margin-bottom: 20px;
+
+}
+
+h2 {
+
+    color: #198754;
+
+    margin-top: 30px;
+
+    margin-bottom: 15px;
+
+}
+
+h3,
+h4,
+h5 {
+
+    color: #dc3545;
+
+    margin-bottom: 10px;
+
+}
+
+/*==============================================================================
+    Paragraphs
+==============================================================================*/
+
+p {
+
+    margin-bottom: 15px;
+
+}
+
+/*==============================================================================
+    Sections
+==============================================================================*/
+
+section {
+
+    margin-bottom: 30px;
+
+}
+
+/*==============================================================================
+    Horizontal Rule
+==============================================================================*/
+
+hr {
+
+    margin: 30px 0;
+
+}
+
+/*==============================================================================
+    Lists
+==============================================================================*/
+
+ul {
+
+    padding-left: 25px;
+
+}
+
+li {
+
+    margin-bottom: 8px;
+
+}
+
+/*==============================================================================
+    Form Elements
+==============================================================================*/
+
+input {
+
+    width: 300px;
+
+    padding: 10px;
+
+    border: 1px solid #cccccc;
+
+    border-radius: 5px;
+
+    margin-bottom: 15px;
+
+}
+
+button {
+
+    background-color: #198754;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 22px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+}
+
+button:hover {
+
+    background-color: #146c43;
+
+}
+
+/*==============================================================================
+    Table
+==============================================================================*/
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+}
+
+th,
+td {
+
+    border: 1px solid #cccccc;
+
+    padding: 12px;
+
+    text-align: center;
+
+}
+
+th {
+
+    background-color: #0d6efd;
+
+    color: white;
+
+}
+
+/*==============================================================================
+    Images
+==============================================================================*/
+
+img {
+
+    width: 250px;
+
+    height: auto;
+
+    border-radius: 8px;
+
+    border: 2px solid #dddddd;
+
+}
+
+/*==============================================================================
+    Responsive Design
+==============================================================================*/
+
+@media (max-width: 768px) {
+
+    .container {
+
+        padding: 20px;
+
+    }
+
+    h1 {
+
+        font-size: 30px;
+
+    }
+
+    h2 {
+
+        font-size: 24px;
+
+    }
+
+    input {
+
+        width: 100%;
+
+    }
+
+    button {
+
+        width: 100%;
+
+    }
+
+    img {
+
+        width: 100%;
+
+    }
+
+}
