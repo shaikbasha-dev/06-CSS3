@@ -1,0 +1,814 @@
+<!--
+===============================================================================
+File Name      : index.html
+Topic          : CSS Borders
+Repository     : 06-CSS3
+Description    : Demonstrates various CSS Border properties including
+                 border styles, border width, border color,
+                 border radius, and individual border properties.
+Author         : Shaik Mahaboob Basha
+===============================================================================
+-->
+
+<!DOCTYPE html>
+
+<!-- Root HTML Element Starts -->
+<html lang="en">
+
+<head>
+
+    <!-- Character Encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Responsive Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page Title -->
+    <title>CSS Borders</title>
+
+    <!-- External CSS File -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<!-- Body Starts -->
+<body>
+
+    <!-- =================================================================== -->
+    <!-- Main Container Starts                                                -->
+    <!-- =================================================================== -->
+
+    <div class="container">
+
+        <!-- Main Heading -->
+        <h1>CSS Borders</h1>
+
+        <!-- Introduction -->
+        <p class="introduction">
+            CSS Borders are used to create a visible boundary around HTML
+            elements. They improve the appearance of web pages by separating
+            content, highlighting important information, and creating
+            professional user interfaces.
+        </p>
+
+        <!-- Horizontal Line -->
+        <hr>
+
+        <!-- =================================================================== -->
+        <!-- What is CSS Border?                                                  -->
+        <!-- =================================================================== -->
+
+        <section>
+
+            <!-- Section Heading -->
+            <h2>What is a CSS Border?</h2>
+
+            <!-- Explanation Paragraph -->
+            <p>
+                A CSS Border is the outline that surrounds an HTML element.
+                It appears between the element's padding and margin.
+            </p>
+
+            <!-- Explanation Paragraph -->
+            <p>
+                Every border consists of three important properties:
+            </p>
+
+            <!-- List Starts -->
+            <ul>
+
+                <!-- List Item -->
+                <li>Border Width</li>
+
+                <!-- List Item -->
+                <li>Border Style</li>
+
+                <!-- List Item -->
+                <li>Border Color</li>
+
+            </ul>
+            <!-- List Ends -->
+
+        </section>
+
+        <!-- Horizontal Line -->
+        <hr>
+
+        <!-- =================================================================== -->
+        <!-- Border Syntax                                                        -->
+        <!-- =================================================================== -->
+
+        <section>
+
+            <!-- Section Heading -->
+            <h2>Border Syntax</h2>
+
+            <!-- Description -->
+            <p>
+                The shorthand border property combines width, style, and color.
+            </p>
+
+            <!-- Code Block -->
+            <pre>
+border: 3px solid blue;
+            </pre>
+
+            <!-- Description -->
+            <p>
+                This single line creates a blue solid border having a thickness
+                of 3 pixels.
+            </p>
+
+        </section>
+
+        <!-- Horizontal Line -->
+        <hr>
+
+        <!-- =================================================================== -->
+        <!-- Border Styles Demonstration                                          -->
+        <!-- =================================================================== -->
+
+        <section>
+
+            <!-- Section Heading -->
+            <h2>Border Styles</h2>
+
+            <!-- Description -->
+            <p>
+                CSS supports multiple border styles for creating different
+                visual effects.
+            </p>
+
+            <!-- Border Examples Container -->
+            <div class="border-examples">
+
+                <!-- =========================================================== -->
+                <!-- Solid Border Example                                        -->
+                <!-- =========================================================== -->
+
+                <div class="box solid">
+
+                    <!-- Example Heading -->
+                    <h3>Solid Border</h3>
+
+                    <!-- Example Description -->
+                    <p>
+                        A continuous straight border around the element.
+                    </p>
+
+                </div>
+
+                <!-- =========================================================== -->
+                <!-- Dotted Border Example                                       -->
+                <!-- =========================================================== -->
+
+                <div class="box dotted">
+
+                    <!-- Example Heading -->
+                    <h3>Dotted Border</h3>
+
+                    <!-- Example Description -->
+                    <p>
+                        Displays the border using evenly spaced dots.
+                    </p>
+
+                </div>
+
+                <!-- =========================================================== -->
+                <!-- Dashed Border Example                                       -->
+                <!-- =========================================================== -->
+
+                <div class="box dashed">
+
+                    <!-- Example Heading -->
+                    <h3>Dashed Border</h3>
+
+                    <!-- Example Description -->
+                    <p>
+                        Displays the border using short dashes.
+                    </p>
+
+                </div>
+
+                <!-- =========================================================== -->
+                <!-- Double Border Example                                       -->
+                <!-- =========================================================== -->
+
+                <div class="box double">
+
+                    <!-- Example Heading -->
+                    <h3>Double Border</h3>
+
+                    <!-- Example Description -->
+                    <p>
+                        Displays two parallel border lines.
+                    </p>
+
+                </div>
+
+                <!-- =========================================================== -->
+                <!-- Groove Border Example                                       -->
+                <!-- =========================================================== -->
+
+                <div class="box groove">
+
+                    <!-- Example Heading -->
+                    <h3>Groove Border</h3>
+
+                    <!-- Example Description -->
+                    <p>
+                        Creates a three-dimensional grooved appearance.
+                    </p>
+
+                </div>
+
+                <!-- =========================================================== -->
+                <!-- Ridge Border Example                                        -->
+                <!-- =========================================================== -->
+
+                <div class="box ridge">
+
+                    <!-- Example Heading -->
+                    <h3>Ridge Border</h3>
+
+                    <!-- Example Description -->
+                    <p>
+                        Creates a raised three-dimensional border effect.
+                    </p>
+
+                </div>
+
+                <!-- =========================================================== -->
+                <!-- Inset Border Example                                        -->
+                <!-- =========================================================== -->
+
+                <div class="box inset">
+
+                    <!-- Example Heading -->
+                    <h3>Inset Border</h3>
+
+                    <!-- Example Description -->
+                    <p>
+                        Gives the appearance that the content is embedded.
+                    </p>
+
+                </div>
+
+                <!-- =========================================================== -->
+                <!-- Outset Border Example                                       -->
+                <!-- =========================================================== -->
+
+                <div class="box outset">
+
+                    <!-- Example Heading -->
+                    <h3>Outset Border</h3>
+
+                    <!-- Example Description -->
+                    <p>
+                        Gives the appearance that the content is raised.
+                    </p>
+
+                </div>
+
+            </div>
+            <!-- Border Examples Container Ends -->
+
+        </section>
+
+        <!-- Horizontal Line -->
+        <hr>
+                <!-- =================================================================== -->
+        <!-- Border Width Examples                                               -->
+        <!-- =================================================================== -->
+
+        <section>
+
+            <!-- Section Heading -->
+            <h2>Border Width Examples</h2>
+
+            <!-- Description -->
+            <p>
+                The <strong>border-width</strong> property controls the thickness
+                of a border. Different widths can be applied depending on the
+                design requirements.
+            </p>
+
+            <!-- Border Width Examples Container Starts -->
+            <div class="border-width-container">
+
+                <!-- Thin Border -->
+                <div class="box thin-border">
+
+                    <!-- Example Heading -->
+                    <h3>Thin Border</h3>
+
+                    <!-- Description -->
+                    <p>Uses a thin border.</p>
+
+                </div>
+
+                <!-- Medium Border -->
+                <div class="box medium-border">
+
+                    <!-- Example Heading -->
+                    <h3>Medium Border</h3>
+
+                    <!-- Description -->
+                    <p>Uses a medium border.</p>
+
+                </div>
+
+                <!-- Thick Border -->
+                <div class="box thick-border">
+
+                    <!-- Example Heading -->
+                    <h3>Thick Border</h3>
+
+                    <!-- Description -->
+                    <p>Uses a thick border.</p>
+
+                </div>
+
+                <!-- Custom Border -->
+                <div class="box custom-border">
+
+                    <!-- Example Heading -->
+                    <h3>5px Border</h3>
+
+                    <!-- Description -->
+                    <p>Uses a custom border width.</p>
+
+                </div>
+
+            </div>
+            <!-- Border Width Examples Container Ends -->
+
+        </section>
+
+        <!-- Horizontal Rule -->
+        <hr>
+
+        <!-- =================================================================== -->
+        <!-- Border Color Examples                                               -->
+        <!-- =================================================================== -->
+
+        <section>
+
+            <!-- Section Heading -->
+            <h2>Border Color Examples</h2>
+
+            <!-- Description -->
+            <p>
+                The <strong>border-color</strong> property changes the color
+                of the border without affecting the element's content.
+            </p>
+
+            <!-- Border Color Examples Container Starts -->
+            <div class="border-color-container">
+
+                <!-- Red Border -->
+                <div class="box red-border">
+
+                    <!-- Example Heading -->
+                    <h3>Red Border</h3>
+
+                </div>
+
+                <!-- Green Border -->
+                <div class="box green-border">
+
+                    <!-- Example Heading -->
+                    <h3>Green Border</h3>
+
+                </div>
+
+                <!-- Blue Border -->
+                <div class="box blue-border">
+
+                    <!-- Example Heading -->
+                    <h3>Blue Border</h3>
+
+                </div>
+
+                <!-- Orange Border -->
+                <div class="box orange-border">
+
+                    <!-- Example Heading -->
+                    <h3>Orange Border</h3>
+
+                </div>
+
+            </div>
+            <!-- Border Color Examples Container Ends -->
+
+        </section>
+
+        <!-- Horizontal Rule -->
+        <hr>
+
+        <!-- =================================================================== -->
+        <!-- Border Radius Examples                                              -->
+        <!-- =================================================================== -->
+
+        <section>
+
+            <!-- Section Heading -->
+            <h2>Border Radius Examples</h2>
+
+            <!-- Description -->
+            <p>
+                The <strong>border-radius</strong> property creates rounded
+                corners, making modern web interfaces more attractive.
+            </p>
+
+            <!-- Border Radius Container Starts -->
+            <div class="radius-container">
+
+                <!-- Radius 0 -->
+                <div class="box radius-0">
+
+                    <!-- Heading -->
+                    <h3>0px Radius</h3>
+
+                </div>
+
+                <!-- Radius 10 -->
+                <div class="box radius-10">
+
+                    <!-- Heading -->
+                    <h3>10px Radius</h3>
+
+                </div>
+
+                <!-- Radius 20 -->
+                <div class="box radius-20">
+
+                    <!-- Heading -->
+                    <h3>20px Radius</h3>
+
+                </div>
+
+                <!-- Circle -->
+                <div class="box radius-50">
+
+                    <!-- Heading -->
+                    <h3>50% Radius</h3>
+
+                </div>
+
+            </div>
+            <!-- Border Radius Container Ends -->
+
+        </section>
+
+        <!-- Horizontal Rule -->
+        <hr>
+
+        <!-- =================================================================== -->
+        <!-- Individual Border Properties                                        -->
+        <!-- =================================================================== -->
+
+        <section>
+
+            <!-- Section Heading -->
+            <h2>Individual Border Properties</h2>
+
+            <!-- Description -->
+            <p>
+                CSS allows borders to be applied independently on each side
+                of an element.
+            </p>
+
+            <!-- Individual Border Examples -->
+            <div class="individual-border-container">
+
+                <!-- Top Border -->
+                <div class="box top-border">
+
+                    <!-- Heading -->
+                    <h3>Border Top</h3>
+
+                    <!-- Description -->
+                    <p>Applies border only to the top.</p>
+
+                </div>
+
+                <!-- Right Border -->
+                <div class="box right-border">
+
+                    <!-- Heading -->
+                    <h3>Border Right</h3>
+
+                    <!-- Description -->
+                    <p>Applies border only to the right.</p>
+
+                </div>
+
+                <!-- Bottom Border -->
+                <div class="box bottom-border">
+
+                    <!-- Heading -->
+                    <h3>Border Bottom</h3>
+
+                    <!-- Description -->
+                    <p>Applies border only to the bottom.</p>
+
+                </div>
+
+                <!-- Left Border -->
+                <div class="box left-border">
+
+                    <!-- Heading -->
+                    <h3>Border Left</h3>
+
+                    <!-- Description -->
+                    <p>Applies border only to the left.</p>
+
+                </div>
+
+            </div>
+            <!-- Individual Border Examples End -->
+
+        </section>
+
+        <!-- Horizontal Rule -->
+        <hr>
+                <!-- =================================================================== -->
+        <!-- Border Properties Comparison Table                                 -->
+        <!-- =================================================================== -->
+
+        <section>
+
+            <!-- Section Heading -->
+            <h2>Border Properties Comparison</h2>
+
+            <!-- Description -->
+            <p>
+                The following table summarizes the most commonly used CSS
+                border properties and their purposes.
+            </p>
+
+            <!-- Comparison Table Starts -->
+            <table>
+
+                <!-- Table Header -->
+                <thead>
+
+                    <!-- Header Row -->
+                    <tr>
+
+                        <!-- Header Cell -->
+                        <th>Property</th>
+
+                        <!-- Header Cell -->
+                        <th>Description</th>
+
+                        <!-- Header Cell -->
+                        <th>Example</th>
+
+                    </tr>
+
+                </thead>
+
+                <!-- Table Body -->
+                <tbody>
+
+                    <!-- Row -->
+                    <tr>
+
+                        <td>border</td>
+
+                        <td>Shorthand property for width, style and color.</td>
+
+                        <td>border:2px solid blue;</td>
+
+                    </tr>
+
+                    <!-- Row -->
+                    <tr>
+
+                        <td>border-width</td>
+
+                        <td>Defines border thickness.</td>
+
+                        <td>border-width:5px;</td>
+
+                    </tr>
+
+                    <!-- Row -->
+                    <tr>
+
+                        <td>border-style</td>
+
+                        <td>Defines border appearance.</td>
+
+                        <td>border-style:dashed;</td>
+
+                    </tr>
+
+                    <!-- Row -->
+                    <tr>
+
+                        <td>border-color</td>
+
+                        <td>Defines border color.</td>
+
+                        <td>border-color:red;</td>
+
+                    </tr>
+
+                    <!-- Row -->
+                    <tr>
+
+                        <td>border-radius</td>
+
+                        <td>Creates rounded corners.</td>
+
+                        <td>border-radius:20px;</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+            <!-- Comparison Table Ends -->
+
+        </section>
+
+        <!-- Horizontal Rule -->
+        <hr>
+
+        <!-- =================================================================== -->
+        <!-- Browser Working Process                                             -->
+        <!-- =================================================================== -->
+
+        <section>
+
+            <!-- Section Heading -->
+            <h2>Browser Working Process</h2>
+
+            <!-- Description -->
+            <p>
+                The browser performs the following steps while rendering CSS
+                Borders.
+            </p>
+
+            <!-- Ordered List Starts -->
+            <ol>
+
+                <!-- Step -->
+                <li>Load the HTML document.</li>
+
+                <!-- Step -->
+                <li>Load the external CSS stylesheet.</li>
+
+                <!-- Step -->
+                <li>Match CSS selectors with HTML elements.</li>
+
+                <!-- Step -->
+                <li>Read border properties.</li>
+
+                <!-- Step -->
+                <li>Calculate border width.</li>
+
+                <!-- Step -->
+                <li>Apply border style.</li>
+
+                <!-- Step -->
+                <li>Apply border color.</li>
+
+                <!-- Step -->
+                <li>Render the final webpage.</li>
+
+            </ol>
+            <!-- Ordered List Ends -->
+
+        </section>
+
+        <!-- Horizontal Rule -->
+        <hr>
+
+        <!-- =================================================================== -->
+        <!-- Best Practices                                                      -->
+        <!-- =================================================================== -->
+
+        <section>
+
+            <!-- Section Heading -->
+            <h2>Best Practices</h2>
+
+            <!-- Best Practices List -->
+            <ul>
+
+                <!-- Practice -->
+                <li>Use consistent border styles throughout the application.</li>
+
+                <!-- Practice -->
+                <li>Prefer shorthand border properties whenever possible.</li>
+
+                <!-- Practice -->
+                <li>Use border-radius for modern user interface designs.</li>
+
+                <!-- Practice -->
+                <li>Avoid thick borders unless required.</li>
+
+                <!-- Practice -->
+                <li>Maintain proper color contrast.</li>
+
+            </ul>
+
+        </section>
+
+        <!-- Horizontal Rule -->
+        <hr>
+
+        <!-- =================================================================== -->
+        <!-- Common Beginner Mistakes                                            -->
+        <!-- =================================================================== -->
+
+        <section>
+
+            <!-- Section Heading -->
+            <h2>Common Beginner Mistakes</h2>
+
+            <!-- Mistakes List -->
+            <ul>
+
+                <!-- Mistake -->
+                <li>Forgetting to specify <strong>border-style</strong>.</li>
+
+                <!-- Mistake -->
+                <li>Using inconsistent border widths.</li>
+
+                <!-- Mistake -->
+                <li>Applying unnecessary thick borders.</li>
+
+                <!-- Mistake -->
+                <li>Confusing border with outline.</li>
+
+                <!-- Mistake -->
+                <li>Using poor border color combinations.</li>
+
+            </ul>
+
+        </section>
+
+        <!-- Horizontal Rule -->
+        <hr>
+
+        <!-- =================================================================== -->
+        <!-- Interview Questions                                                 -->
+        <!-- =================================================================== -->
+
+        <section>
+
+            <!-- Section Heading -->
+            <h2>Frequently Asked Interview Questions</h2>
+
+            <!-- Questions List -->
+            <ol>
+
+                <!-- Question -->
+                <li>What is a CSS Border?</li>
+
+                <!-- Question -->
+                <li>What are the components of a border?</li>
+
+                <!-- Question -->
+                <li>Explain border shorthand property.</li>
+
+                <!-- Question -->
+                <li>What is border-radius?</li>
+
+                <!-- Question -->
+                <li>Difference between border and outline?</li>
+
+            </ol>
+
+        </section>
+
+        <!-- Horizontal Rule -->
+        <hr>
+
+        <!-- =================================================================== -->
+        <!-- Footer Section                                                      -->
+        <!-- =================================================================== -->
+
+        <footer>
+
+            <!-- Footer Text -->
+            <p>
+                This demonstration covers the most commonly used CSS Border
+                properties used in professional web development.
+            </p>
+
+        </footer>
+
+    </div>
+    <!-- Main Container Ends -->
+
+</body>
+<!-- Body Ends -->
+
+</html>
+<!-- HTML Document Ends -->
